@@ -43,7 +43,7 @@ function App() {
   return (
     <div>
       {/* Navbar with Controlled Collapse */}
-      <Navbar expand="lg" className="position-relative w-100 top-0 shadow-sm" style={{ zIndex: 980 }} expanded={expanded}>
+      <Navbar expand="lg" className="position-relative w-100 top-0 shadow-sm" style={{ zIndex: 1050 }} expanded={expanded}>
         <Container>
           <Navbar.Brand>
             <Link to="/" className="navbar-brand d-flex" onClick={() => setExpanded(false)}>
@@ -76,7 +76,7 @@ function App() {
                   key={path} 
                   to={path} 
                   className={`nav-link text-uppercase text-dark fw-bold ${location.pathname === path ? "active" : ""}`} 
-                  onClick={() => setExpanded(false)}
+                  onClick={() => setExpanded(false)} // Collapse navbar after clicking
                 >
                   {label}
                 </Link>
