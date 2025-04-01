@@ -12,6 +12,10 @@ import Person6 from '../../utils/images/pg4degree.jpg';
 import Person7 from '../../utils/images/pg3degree.jpg';
 import Person8 from '../../utils/images/pg2degree.jpg';
 import Person9 from '../../utils/images/pg1degree.jpg';
+import { useState, useEffect } from "react";
+
+import Loader from "../../pages/Loader/Loader";
+
 
 const persons = [
     { id: 1, img: Person1 },
@@ -22,7 +26,22 @@ const persons = [
 ];
 
 function About() {
+
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    // Simulate an async operation like fetching data
+    setTimeout(() => {
+      setData("Fetched Data");
+      setLoading(false);
+    }, 1000); // Simulate a 2-second delay
+  }, []);
+
+
   return (
+    <> 
+    {loading ? <Loader /> :
     <div className='about-page'>
         <header className='height-75'>
             <div className='container h-100 d-flex flex-column align-items-center justify-content-center text-light'>
@@ -65,6 +84,8 @@ function About() {
           </div>
         </div>
     </div>
+}
+</>
   )
 }
 

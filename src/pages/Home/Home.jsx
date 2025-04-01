@@ -7,6 +7,10 @@ import FaqAccordion from "../../components/FaqAccordion/FaqAccordion";
 import BackgroundSlideshow from "./BackgroundSlideshow";
 import { useLocation } from "react-router-dom";
 import SocialImageSlider from "./SocialImageSlider";
+import { useState, useEffect } from "react";
+
+import Loader from "../../pages/Loader/Loader";
+
 
 const socialImages  = [
   require("../../utils/images/1.jpg"),
@@ -33,9 +37,22 @@ const homePageImages = [
 function Home() {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    // Simulate an async operation like fetching data
+    setTimeout(() => {
+      setData("Fetched Data");
+      setLoading(false);
+    }, 1000); // Simulate a 2-second delay
+  }, []);
+
+
   return (
     <div className="home-page">
-
+       {loading ? <Loader /> :
       <BackgroundSlideshow images={homePageImages} className="header h-100 min-vh-100 d-flex align-items-center text-light">
       <div className="container d-flex flex-column align-items-center mt-5">
           <h2>Welcome To</h2>
@@ -55,7 +72,7 @@ function Home() {
           </div>
         </div>
       </BackgroundSlideshow>
-  
+}
      <SocialImageSlider images={socialImages}  />
 
       <div className="py-5">

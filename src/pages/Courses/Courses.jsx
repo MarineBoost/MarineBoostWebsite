@@ -10,6 +10,9 @@ import LawCourseImg from '../../utils/images/content_marketing_services.webp';
 import MusicCourseImg from '../../utils/images/music-course.jpg';
 import SportCourseImg from '../../utils/images/e-commerce-marketing.webp';
 import FaqAccordion from '../../components/FaqAccordion/FaqAccordion';
+import { useState, useEffect } from "react";
+
+import Loader from "../../pages/Loader/Loader";
 
 const courses = [
     {
@@ -64,7 +67,21 @@ const courses = [
 
 
 function Courses() {
+    const [loading, setLoading] = useState(true);
+    const [data, setData] = useState(null);
+  
+    useEffect(() => {
+      // Simulate an async operation like fetching data
+      setTimeout(() => {
+        setData("Fetched Data");
+        setLoading(false);
+      }, 1000); // Simulate a 2-second delay
+    }, []);
+
+
   return (
+    <> 
+    {loading ? <Loader /> :
     <div className='courses-page'>
         <header className='height-75'>
             <div className='container h-100 d-flex flex-column align-items-center justify-content-center text-light'>
@@ -93,6 +110,8 @@ function Courses() {
             <FaqAccordion />
         </div>
     </div>
+}
+     </>
   )
 }
 

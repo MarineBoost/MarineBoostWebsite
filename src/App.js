@@ -14,10 +14,12 @@ import Term_condition from './pages/terms_condition/term_condition';
 import Donate from './pages/Donate/Donate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import Loader from "../src/pages/Loader/Loader";
 
 function App() {
   const location = useLocation(); 
   const [expanded, setExpanded] = useState(false);
+
 
   useEffect(() => {
     const mybutton = document.getElementById("myBtn");
@@ -41,6 +43,8 @@ function App() {
   };
 
   return (
+<>
+ 
     <div>
      
       <Navbar expand="lg" className="position-relative w-100 top-0 shadow-sm" style={{ zIndex: 1050 }} expanded={expanded}>
@@ -83,7 +87,7 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/services' element={<Courses />} />
@@ -213,6 +217,8 @@ function App() {
 
 </footer>
     </div>
+    
+              </>
   );
 }
 
