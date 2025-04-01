@@ -73,7 +73,7 @@ function Courses() {
             </div>
         </header>
 
-        <div className='container py-5'>
+        <div className='container py-3'>
             <div className='row g-4'>
                 {courses.map((course) => (
                     <div key={course.id} className='col-lg-6'>
