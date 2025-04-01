@@ -9,7 +9,7 @@ import Courses from './pages/Courses/Courses';
 import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
-import logoImage from './utils/images/marineboost.jpeg';
+import logoImage from './utils/images/marineboost_white.jpeg';
 import Term_condition from './pages/terms_condition/term_condition';
 import Donate from './pages/Donate/Donate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -43,13 +43,13 @@ function App() {
   return (
     <div>
       {/* Navbar with Controlled Collapse */}
-      <Navbar expand="lg" className="position-relative w-100 top-0 shadow-sm" style={{ zIndex: 1050 }} expanded={expanded}>
+      <Navbar expand="lg" className="position-relative w-100 top-0 shadow-sm" style={{ zIndex: 980 }} expanded={expanded}>
         <Container>
           <Navbar.Brand>
-            <Link to="/" className="navbar-brand d-flex align-items-center" onClick={() => setExpanded(false)}>
-              <img src={logoImage} alt="logo" style={{ width: "45px", height: "2.9vh", objectFit: "contain" }} />
-              <span className="mx-2 text-dark lh-1 fw-semibold">
-                <b style={{ fontSize: "28px" }}>Marine Boost</b>
+            <Link to="/" className="navbar-brand d-flex" onClick={() => setExpanded(false)}>
+              <img src={logoImage} alt="logo" style={{ width: "85%", height: "4.8vh", objectFit: "contain" }} />
+              <span className="mx-0 text-dark fw-semibold">
+                <b style={{ fontSize: "24px" }}>Marine Boost</b>
               </span>
             </Link>
           </Navbar.Brand>
@@ -76,7 +76,7 @@ function App() {
                   key={path} 
                   to={path} 
                   className={`nav-link text-uppercase text-dark fw-bold ${location.pathname === path ? "active" : ""}`} 
-                  onClick={() => setExpanded(false)} // Collapse navbar after clicking
+                  onClick={() => setExpanded(false)}
                 >
                   {label}
                 </Link>
