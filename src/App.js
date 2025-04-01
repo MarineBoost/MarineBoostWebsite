@@ -105,19 +105,7 @@ function App() {
   
   <div className='container p-3' >
     <div className='row d-flex justify-content-between align-items-center'>
-      {/* here i add this advertising */}
-      <div>
-{/* Google AdSense Ad Placeholder */}
-    <ins 
-      className="adsbygoogle"
-      style={{ display: "block" }}
-      data-ad-format="fluid"
-      data-ad-layout-key="-fb+5w+4e-db+86"
-      data-ad-client="ca-pub-6901408017524149"
-      data-ad-slot="3993093623"
-    ></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    </div>
+
       <div className='col-md-4'>
         <Link to="/contact">
           <button type='button' className='btn btn-outline-danger btn-lg mb-5 mb-md-4'>Get In Touch</button>

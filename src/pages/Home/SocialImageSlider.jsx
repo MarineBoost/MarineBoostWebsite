@@ -3,6 +3,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const SocialImageSlider = ({ images }) => {
   const [index, setIndex] = useState(0);
+  const [sliderHeight, setSliderHeight] = useState(window.innerWidth > 768 ? "50vh" : "30vh");
 
   // Auto change slides every 4 seconds
   useEffect(() => {
@@ -27,6 +28,16 @@ const SocialImageSlider = ({ images }) => {
     setIndex(i);
   };
 
+  // Update slider height based on window size
+  useEffect(() => {
+    const handleResize = () => {
+      setSliderHeight(window.innerWidth > 768 ? "50vh" : "30vh");
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section
       className="social-slider"
@@ -34,42 +45,75 @@ const SocialImageSlider = ({ images }) => {
         backgroundImage: `url(${images[index]})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "50vh",
+        height: sliderHeight, // Adjust height based on screen size
         transition: "background-image 0.8s ease-in-out",
         position: "relative",
-        marginTop: "8%",
+        marginTop: "5%",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         width: "100%",
-        maxWidth: "100vw"
+        maxWidth: "100vw",
+        objectFit: "cover",
       }}
     >
       {/* Left Arrow */}
-      <button 
-        className="arrow left-arrow" 
-        onClick={handlePrev} 
-        style={{ position: "absolute", left: "10px", fontSize: "1.5rem", background: "rgba(0,0,0,0.5)", color: "white", padding: "10px", borderRadius: "50%", cursor: "pointer" }}
+      <button
+        className="arrow left-arrow"
+        onClick={handlePrev}
+        style={{
+          position: "absolute",
+          left: "10px",
+          fontSize: "1rem",
+          background: "black",
+          color: "white",
+          padding: "5px",
+       
+          cursor: "pointer",
+        }}
       >
         <FaArrowLeft />
       </button>
 
-      <div className="dots-container" style={{ position: "absolute", bottom: "10px", display: "flex", gap: "5px" }}>
+      <div
+        className="dots-container"
+        style={{
+          position: "absolute",
+          bottom: "10px",
+          display: "flex",
+          gap: "5px",
+        }}
+      >
         {images.map((_, i) => (
           <span
             key={i}
             className={`dot ${i === index ? "active" : ""}`}
             onClick={() => handleDotClick(i)}
-            style={{ width: "10px", height: "10px", borderRadius: "50%", backgroundColor: i === index ? "white" : "gray", cursor: "pointer" }}
+            style={{
+              width: "10px",
+              height: "10px",
+              borderRadius: "50%",
+              backgroundColor: i === index ? "white" : "gray",
+              cursor: "pointer",
+            }}
           ></span>
         ))}
       </div>
 
       {/* Right Arrow */}
-      <button 
-        className="arrow right-arrow" 
-        onClick={handleNext} 
-        style={{ position: "absolute", right: "10px", fontSize: "1.5rem", background: "rgba(0,0,0,0.5)", color: "white", padding: "10px", borderRadius: "50%", cursor: "pointer" }}
+      <button
+        className="arrow right-arrow"
+        onClick={handleNext}
+        style={{
+          position: "absolute",
+          right: "10px",
+          fontSize: "1rem",
+          background: "black",
+          color: "white",
+          padding: "5px",
+
+          cursor: "pointer",
+        }}
       >
         <FaArrowRight />
       </button>

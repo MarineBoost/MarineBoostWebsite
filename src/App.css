@@ -121,10 +121,10 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: grey;
+  background-color: black;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 8px;
   border-radius: 4px;
 }
 
@@ -145,7 +145,7 @@ body {
 
 
 .icon-large {
-  font-size: 36px;
+  font-size: 18px;
 }
 
 
