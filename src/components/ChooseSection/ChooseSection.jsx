@@ -81,7 +81,7 @@ function ChooseSection() {
                   Locations Of Marine Boost
                 </Card.Title>
                 <Card.Text className="text-center">
-                <b style={{ color: "blue" }}>Ahmedabad</b>
+              Ahmedabad
                 </Card.Text>
               </Card.Body>
             </Card>
