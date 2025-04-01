@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Contact.css';
-import KankariyaImg from '../../utils/images/food_safety_and_standard_authority_of_india_clean_street_food_hub_ahmedabad_kankaria_lake_1536401601.jpg';
-import Jal_mandir from '../../utils/images/jal_mandir.jpg';
-import Nalanda_university from '../../utils/images/nalanda_university.jpg';
+import KankariyaImg from '../../utils/images/marine_3.jpg';
+import Jal_mandir from '../../utils/images/marine_2.jpg';
+import Nalanda_university from '../../utils/images/marine_1.jpg';
 import emailjs from '@emailjs/browser';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
@@ -217,7 +217,7 @@ function Contact() {
       {/* Our Locations Section */}
       <div className="bg-dark text-light p-5">
         <div className="container">
-          <h2 className="text-center mb-5">Our Locations</h2>
+          <h2 className="text-center mb-5">Gallery</h2>
           <div className="row g-4">
             <div className="col-lg-4 d-flex flex-column align-items-center">
               <img
@@ -226,7 +226,7 @@ function Contact() {
                 alt=""
                 style={{ width: "500px", height: "300px" }}
               />
-              <h3 className="text-center mt-3">Nalanda</h3>
+              {/* <h3 className="text-center mt-3">Nalanda</h3> */}
             </div>
             <div className="col-lg-4 d-flex flex-column align-items-center">
               <img
@@ -235,7 +235,7 @@ function Contact() {
                 alt=""
                 style={{ width: "500px", height: "300px" }}
               />
-              <h3 className="text-center mt-3">Pawapuri</h3>
+              {/* <h3 className="text-center mt-3">Pawapuri</h3> */}
             </div>
             <div className="col-lg-4 d-flex flex-column align-items-center">
               <img
@@ -244,7 +244,7 @@ function Contact() {
                 alt=""
                 style={{ width: "500px", height: "300px" }}
               />
-              <h3 className="text-center mt-3">Kankaria Lake</h3>
+        
             </div>
           </div>
         </div>

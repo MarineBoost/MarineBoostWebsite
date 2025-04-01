@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
-  const location = useLocation(); // Get the current pathname
+  const location = useLocation(); 
   const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div>
-      {/* Navbar with Controlled Collapse */}
+     
       <Navbar expand="lg" className="position-relative w-100 top-0 shadow-sm" style={{ zIndex: 1050 }} expanded={expanded}>
         <Container>
           <Navbar.Brand>
@@ -54,14 +54,12 @@ function App() {
             </Link>
           </Navbar.Brand>
 
-          {/* Navbar Toggle Button */}
+          
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             className="bg-light"
-            onClick={() => setExpanded(expanded ? false : true)} // Toggle expand state
+            onClick={() => setExpanded(expanded ? false : true)}
           />
-
-          {/* Navbar Collapse */}
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-2 justify-content-end w-100">
               {[
@@ -76,7 +74,7 @@ function App() {
                   key={path} 
                   to={path} 
                   className={`nav-link text-uppercase text-dark fw-bold ${location.pathname === path ? "active" : ""}`} 
-                  onClick={() => setExpanded(false)} // Collapse navbar after clicking
+                  onClick={() => setExpanded(false)} 
                 >
                   {label}
                 </Link>
@@ -85,8 +83,7 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      {/* Routes */}
+      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/services' element={<Courses />} />
@@ -97,7 +94,6 @@ function App() {
         <Route path='/business' element={<Donate />} />
       </Routes>
 
-      {/* Scroll-to-Top Button */}
       <button onClick={topFunction} id="myBtn" title="Go to top">
         <FontAwesomeIcon icon={faArrowUp} className="icon-large" />
       </button>
