@@ -3,7 +3,7 @@
                     url(../../utils/images/terms_condition_freefix.jpeg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: cover;
   width: 100%;
   min-height: 400px; /* Ensures visibility on smaller screens */
   height: 100vh; /* Full viewport height */
@@ -25,11 +25,10 @@
 }
 
 .center-container {
-  background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), 
-                    url(../../utils/images/terms_condition_freefix.jpeg);
+
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: cover;
   display: flex;
   align-items: center;
   justify-content: center;
