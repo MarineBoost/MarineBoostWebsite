@@ -116,7 +116,7 @@ background-color: black;
     top: 50%;
     transform: translateY(-50%);
     color: white; /* Icon color */
-    font-size: 2rem; /* Adjust icon size */
+    font-size: 1rem; /* Adjust icon size */
     cursor: pointer;
 }
 
