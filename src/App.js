@@ -66,9 +66,9 @@ function App() {
             <Nav className="me-2 justify-content-end w-100">
               {[
                 { path: "/", label: "Home" },
-                { path: "/courses", label: "Services" },
+                { path: "/services", label: "Services" },
                 { path: "/about", label: "About us" },
-                { path: "/donate", label: "Business" },
+                { path: "/business", label: "Business" },
                 { path: "/contact", label: "Get in touch" },
                 { path: "/term_condition", label: "Terms & Conditions" },
               ].map(({ path, label }) => (
@@ -89,12 +89,12 @@ function App() {
       {/* Routes */}
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/courses' element={<Courses />} />
+        <Route path='/services' element={<Courses />} />
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/term_condition' element={<Term_condition />} />
-        <Route path='/donate' element={<Donate />} />
+        <Route path='/business' element={<Donate />} />
       </Routes>
 
       {/* Scroll-to-Top Button */}
@@ -141,7 +141,6 @@ function App() {
               </svg>
             </a>
           </li>
-
 
           <li>
             <a href="https://api.whatsapp.com/send?phone=918109126423&text=#" target="_blank" rel="noopener noreferrer">
