@@ -27,7 +27,8 @@ function ChooseSection() {
                 Why Choose Marine Boost?
                 </Card.Title>
                 <Card.Text className="text-center">
-               pp:
+                Marine Boost offers top-notch marine solutions with cutting-edge technology, ensuring reliability, efficiency, and superior performance for all your marine needs.
+
 
                 </Card.Text>
               </Card.Body>
