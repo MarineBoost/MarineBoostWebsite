@@ -2,6 +2,11 @@ import React from 'react';
 import donate_pic from '../../utils/images/balloons-charity-colorful-colourful.jpg';
 import upi_qrcode from '../../utils/images/upi_amarjeet_qrcode.png';
 import './Donate.css';
+import { useState, useEffect } from "react";
+
+import Loader from "../../pages/Loader/Loader";
+
+
 const services = [
   {
     title: 'Search Engine Optimization (SEO)',
@@ -38,25 +43,42 @@ const services = [
 ];
 
 const Donate = () => {
-  return (
-    <div className="term-page-fluid">
 
-<div className='image_div1' style={{ position: 'relative', textAlign: 'center', color: 'white' }}>
-      
-        <h1 className="overlay-text" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',  padding: '10px', borderRadius: '5px' }}>OUR SERVICES</h1>
-      </div>
-        <div className="services-container">
-   
-        <div className="services-grid">
-       {services.map((service, index) => (
-          <div key={index} className="service-card">
-          <b><h3 className="service-title">{service.title}</h3>  </b>  
-            <p className="service-description">{service.description}</p>
+    const [loading, setLoading] = useState(true);
+    const [data, setData] = useState(null);
+  
+    useEffect(() => {
+      setTimeout(() => {
+        setData("Fetched Data");
+        setLoading(false);
+      }, 2000); 
+    }, []);
+
+  return (
+
+    <>
+      {loading ? <Loader /> :
+      <div className="term-page-fluid">
+
+      <div className='image_div1' style={{ position: 'relative', textAlign: 'center', color: 'white' }}>
+            
+              <h1 className="overlay-text" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',  padding: '10px', borderRadius: '5px' }}>OUR BUSINESS</h1>
+            </div>
+              <div className="services-container">
+         
+              <div className="services-grid">
+             {services.map((service, index) => (
+                <div key={index} className="service-card">
+                <b><h3 className="service-title">{service.title}</h3>  </b>  
+                  <p className="service-description">{service.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-      </div>
-    </div>
-    </div>
+          </div>
+}
+    </>
+    
   );
 }
 

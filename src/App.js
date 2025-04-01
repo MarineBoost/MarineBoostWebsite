@@ -14,12 +14,19 @@ import Term_condition from './pages/terms_condition/term_condition';
 import Donate from './pages/Donate/Donate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import Loader from "../src/pages/Loader/Loader";
 
 function App() {
   const location = useLocation(); 
   const [expanded, setExpanded] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(null);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setData("Fetched Data");
+      setLoading(false);
+    }, 2000); 
+  }, []);
 
   useEffect(() => {
     const mybutton = document.getElementById("myBtn");
@@ -43,8 +50,8 @@ function App() {
   };
 
   return (
-<>
- 
+
+    
     <div>
      
       <Navbar expand="lg" className="position-relative w-100 top-0 shadow-sm" style={{ zIndex: 1050 }} expanded={expanded}>
@@ -217,8 +224,6 @@ function App() {
 
 </footer>
     </div>
-    
-              </>
   );
 }
 
