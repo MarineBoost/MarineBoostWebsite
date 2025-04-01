@@ -18,11 +18,7 @@ const persons = [
     { id: 2, img: Person2 },
     { id: 3, img: Person3 },
     { id: 4, img: Person4 },
-    { id: 5, img: Person5 },
-    { id: 6, img: Person6 },
-    { id: 7, img: Person7 },
-    { id: 8, img: Person8 },
-    { id: 9, img: Person9 },
+    
 ];
 
 function About() {
@@ -58,7 +54,7 @@ function About() {
 
         <div className='bg-body-tertiary py-5'>
           <div className="container">
-            <h2 className='text-center mb-5'>Our Clients</h2>
+            <h2 className='text-center mb-5'>Our Team Members</h2>
             <div className='row g-4'>
               {persons.map((person) => (
                 <div key={person.id} className='col-6 col-md-4 col-lg-3 d-flex justify-content-center'>

@@ -8,10 +8,10 @@ const Term_condition = () => {
     <div className="term-page-fluid">
       <div className='image_div'>
       <div className='center-container'>
-        <h1 className='text-center'>Terms and Conditions</h1> 
+        <h1 className='text-center'>Terms & Conditions</h1> 
       </div>
     </div>
-    <div className='terms' style={{ marginLeft: "11%" }}>
+    <div className='terms' style={{ marginLeft: "3%" }}>
   <div className="text-black p-4">
     <h6 className="mt-4 text-black">1. Acceptance of Terms</h6>
     <p>By accessing this website, you agree to comply with and be bound by these terms and conditions. If you do not agree to all of these terms, you are prohibited from using or accessing this website. Please review these terms regularly as they may be updated from time to time.</p>

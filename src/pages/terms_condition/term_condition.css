@@ -1,17 +1,32 @@
 .image_div {
   background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), 
-                    url(../../utils/images/home-page-header.jpg);
-  background-size: cover; /* Ensures the image covers the entire div */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents repetition */
+                    url(../../utils/images/terms_condition_freefix.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
+  min-height: 400px; /* Ensures visibility on smaller screens */
   height: 100vh; /* Full viewport height */
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image_div {
+    height: auto; /* Adjust height for small screens */
+    min-height: 300px;
+    padding: 40px 20px;
+  }
 }
 
 .center-container {
   background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), 
-                    url(../../utils/images/home-page-header.jpg);
+                    url(../../utils/images/terms_condition_freefix.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,5 +34,17 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  min-height: 400px;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .center-container {
+    height: auto; 
+    min-height: 300px;
+    padding: 40px 20px;
+  }
 }
