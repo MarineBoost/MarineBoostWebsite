@@ -34,14 +34,14 @@
     }
 }
 
-/* Ensure images in sections are fully responsive */
+
 .home-page img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover; /* Ensures images fit properly */
-    aspect-ratio: 16 / 9; /* Maintains a good aspect ratio */
-    max-height: 500px; /* Prevents images from getting too large */
+    object-fit: cover; 
+    aspect-ratio: 16 / 9; 
+    max-height: 500px; 
 }
 
 /* Additional media queries for responsive image scaling */

@@ -82,6 +82,7 @@ const SocialImageSlider = ({ images }) => {
           bottom: "10px",
           display: "flex",
           gap: "5px",
+          marginTop:"5%"
         }}
       >
         {images.map((_, i) => (

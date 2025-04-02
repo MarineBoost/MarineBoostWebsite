@@ -7,22 +7,16 @@ import Person1 from '../../utils/images/person1.jpg';
 import Person2 from '../../utils/images/person2.jpg';
 import Person3 from '../../utils/images/person3.jpg';
 import Person4 from '../../utils/images/pexels-vantha-thang-2361316.jpg';
-import Person5 from '../../utils/images/person5.jpg';
-import Person6 from '../../utils/images/pg4degree.jpg';
-import Person7 from '../../utils/images/pg3degree.jpg';
-import Person8 from '../../utils/images/pg2degree.jpg';
-import Person9 from '../../utils/images/pg1degree.jpg';
+
 import { useState, useEffect } from "react";
 
 import Loader from "../../pages/Loader/Loader";
 
-
 const persons = [
-    { id: 1, img: Person1 },
-    { id: 2, img: Person2 },
-    { id: 3, img: Person3 },
-    { id: 4, img: Person4 },
-    
+  { id: 1, img: Person1, name: "John Doe", role: "CEO" },
+  { id: 2, img: Person2, name: "Krishna Dutt", role: "Co-Founder" },
+  { id: 3, img: Person3, name: "Amarjeet Kumar", role: "FullStack Developer ( MERN )" },
+  { id: 4, img: Person4, name: "Emily Brown", role: "Digital Marketing Specialist" },
 ];
 
 function About() {
@@ -75,11 +69,25 @@ function About() {
           <div className="container">
             <h2 className='text-center mb-5'>Our Team Members</h2>
             <div className='row g-4'>
-              {persons.map((person) => (
-                <div key={person.id} className='col-6 col-md-4 col-lg-3 d-flex justify-content-center'>
-                  <img src={person.img} className='img-fluid client-image rounded shadow' alt={`Client ${person.id}`} />
-                </div>
-              ))}
+            {persons.map((person) => (
+            <div key={person.id} className='col-6 col-md-4 col-lg-3 d-flex justify-content-center'>
+              <div className="team-card">
+                <img 
+                  src={person.img} 
+                  className="img-fluid client-image" 
+                  alt={`Client ${person.id}`} 
+                />
+                <center style={{marginTop:"3%"}}> 
+
+                <h5 className="team-name">{person.name}</h5>
+                <h6 className="team-role">{person.role}</h6>
+
+                </center>
+       
+
+              </div>
+            </div>
+          ))}
             </div>
           </div>
         </div>

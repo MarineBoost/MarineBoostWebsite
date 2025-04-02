@@ -11,6 +11,8 @@
 
 /* Ensure images are fully responsive */
 .client-image {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
     max-width: 100%;
     height: auto;
     object-fit: cover;
