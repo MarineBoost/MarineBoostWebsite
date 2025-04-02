@@ -77,7 +77,7 @@ function App() {
                 { path: "/", label: "Home" },
                 { path: "/services", label: "Services" },
                 { path: "/about", label: "About us" },
-                { path: "/business", label: "Business" },
+                // { path: "/business", label: "Business" },
                 { path: "/contact", label: "Get in touch" },
                 { path: "/term_condition", label: "Terms & Conditions" },
               ].map(({ path, label }) => (
@@ -102,7 +102,7 @@ function App() {
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/term_condition' element={<Term_condition />} />
-        <Route path='/business' element={<Donate />} />
+        {/* <Route path='/business' element={<Donate />} /> */}
       </Routes>
 
       <button onClick={topFunction} id="myBtn" title="Go to top">
