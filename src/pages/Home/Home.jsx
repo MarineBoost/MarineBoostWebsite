@@ -13,7 +13,7 @@ import Loader from "../../pages/Loader/Loader";
 
 
 const socialImages  = [
-  require("../../utils/images/1.jpg"),
+  require("../../utils/images/1-1.jpg"),
   require("../../utils/images/2.jpg"),
   require("../../utils/images/3.jpg"),
   require("../../utils/images/4.jpg"),

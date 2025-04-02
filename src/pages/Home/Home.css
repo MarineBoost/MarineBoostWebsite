@@ -130,15 +130,7 @@
 
   
   
-  /* Dots Styling */
-  .dots-container {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-  }
+  
   
   .dot {
     width: 10px;

@@ -48,13 +48,14 @@ const SocialImageSlider = ({ images }) => {
         height: sliderHeight, // Adjust height based on screen size
         transition: "background-image 0.8s ease-in-out",
         position: "relative",
-        marginTop: "10%",
+        marginTop: "5%",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         width: "100%",
         maxWidth: "100vw",
         objectFit: "cover",
+        padding:"1%"
       }}
     >
       {/* Left Arrow */}
@@ -82,7 +83,7 @@ const SocialImageSlider = ({ images }) => {
           bottom: "10px",
           display: "flex",
           gap: "5px",
-          marginTop:"5%"
+          marginTop:"80%"
         }}
       >
         {images.map((_, i) => (
@@ -92,10 +93,12 @@ const SocialImageSlider = ({ images }) => {
             onClick={() => handleDotClick(i)}
             style={{
               width: "10px",
+             
               height: "10px",
               borderRadius: "50%",
-              backgroundColor: i === index ? "white" : "gray",
+              backgroundColor: i === index ? "black" : "grey",
               cursor: "pointer",
+    
             }}
           ></span>
         ))}
