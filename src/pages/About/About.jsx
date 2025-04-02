@@ -5,7 +5,7 @@ import AboutUsSectionImg from '../../utils/images/marineboost_white.jpeg';
 import ChooseSection from '../../components/ChooseSection/ChooseSection';
 import Person1 from '../../utils/images/person1.jpg';
 import Person2 from '../../utils/images/person2.jpg';
-import Person3 from '../../utils/images/person3.jpg';
+import Person3 from '../../utils/images/Untitled-1.png';
 import Person4 from '../../utils/images/pexels-vantha-thang-2361316.jpg';
 
 import { useState, useEffect } from "react";
