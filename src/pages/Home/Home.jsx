@@ -71,8 +71,11 @@ function Home() {
             </Link>
           </div>
         </div>
+        
       </BackgroundSlideshow>
 }
+<center style={{marginTop:"3%"}}><h1 >Working Platforms</h1> </center>
+
      <SocialImageSlider images={socialImages}  />
 
       <div className="py-5">

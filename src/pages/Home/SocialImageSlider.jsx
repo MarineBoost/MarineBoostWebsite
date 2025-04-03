@@ -86,6 +86,7 @@ const SocialImageSlider = ({ images }) => {
           marginTop:"80%"
         }}
       >
+       
         {images.map((_, i) => (
           <span
             key={i}
