@@ -3,20 +3,22 @@ import './About.css';
 import { Link } from 'react-router-dom';
 import AboutUsSectionImg from '../../utils/images/marineboost_white.jpeg';
 import ChooseSection from '../../components/ChooseSection/ChooseSection';
-import Person1 from '../../utils/images/person1.jpg';
-import Person2 from '../../utils/images/person2.jpg';
+import Person1 from '../../utils/images/team_member/1.jpg';
+import Person2 from '../../utils/images/team_member/2.jpg';
 import Person3 from '../../utils/images/Untitled-1.png';
-import Person4 from '../../utils/images/pexels-vantha-thang-2361316.jpg';
+import Person4 from '../../utils/images/team_member/4.jpg';
+import Person5 from '../../utils/images/team_member/3.jpg';
 
 import { useState, useEffect } from "react";
 
 import Loader from "../../pages/Loader/Loader";
 
 const persons = [
-  { id: 1, img: Person1, name: "John Doe", role: "CEO" },
-  { id: 2, img: Person2, name: "Krishna Dutt", role: "Co-Founder" },
-  { id: 3, img: Person3, name: "Amarjeet Kumar", role: "FullStack Developer ( MERN )" },
-  { id: 4, img: Person4, name: "Emily Brown", role: "Digital Marketing Specialist" },
+  { id: 1, img: Person1, name: "Pooja", role: "Founder" },
+  { id: 2, img: Person2, name: "Krishna Dutt", role: "Co-Founder\nE-Commerce Specialist" },
+  { id: 3, img: Person3, name: "Amarjeet Kumar", role: "Developer" },
+  { id: 4, img: Person4, name: "Sonu Sankhla", role: "Marketing Head" },
+  { id: 5, img: Person5, name: "Jay Prajapati", role: "Website Coordinator" },
 ];
 
 function About() {
@@ -25,11 +27,10 @@ function About() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    // Simulate an async operation like fetching data
     setTimeout(() => {
       setData("Fetched Data");
       setLoading(false);
-    }, 1000); // Simulate a 2-second delay
+    }, 1000); 
   }, []);
 
 
@@ -80,7 +81,14 @@ function About() {
                 <center style={{marginTop:"3%"}}> 
 
                 <h5 className="team-name">{person.name}</h5>
-                <h6 className="team-role">{person.role}</h6>
+                <h6 className="team-role">
+                  {person.role.split('\n').map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      {index < person.role.split('\n').length - 1 && <br />}
+                    </React.Fragment>
+                  ))}
+                </h6>
 
                 </center>
        
