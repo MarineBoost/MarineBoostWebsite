@@ -1,7 +1,9 @@
 import React from 'react';
 import './About.css';
 import { Link } from 'react-router-dom';
-import AboutUsSectionImg from '../../utils/images/marineboost_white.jpeg';
+// import AboutUsSectionImg from '../../utils/images/marineboost_white.jpeg';
+import AboutUsVideo from '../../utils/images/logo_animation/logo_animation_marine_boost.mp4';
+
 import ChooseSection from '../../components/ChooseSection/ChooseSection';
 import Person1 from '../../utils/images/team_member/1.jpg';
 import Person2 from '../../utils/images/team_member/2.jpg';
@@ -57,9 +59,15 @@ function About() {
                         <button type='button' className='btn btn-danger btn-lg mx-0 mx-sm-2 my-2 my-sm-0'>Contact Us</button>
                     </Link>
                 </div>
-                <div className='col-lg-6 d-flex justify-content-center'>
+                {/* <div className='col-lg-6 d-flex justify-content-center'>
                     <img src={AboutUsSectionImg} className='img-fluid w-75' alt="" />
-                </div>
+                </div> */}
+                <div className='col-lg-6 d-flex justify-content-center'>
+    <video className='img-fluid w-75' autoPlay loop muted>
+        <source src={AboutUsVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+</div>
             </div>
         </div>
 
