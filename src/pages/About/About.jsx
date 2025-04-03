@@ -63,7 +63,7 @@ function About() {
                     <img src={AboutUsSectionImg} className='img-fluid w-75' alt="" />
                 </div> */}
                 <div className='col-lg-6 d-flex justify-content-center'>
-    <video className='img-fluid w-75' autoPlay loop muted>
+                <video className='img-fluid' style={{ width: "75%", height: "300px", objectFit: "cover" }} autoPlay loop muted>
         <source src={AboutUsVideo} type="video/mp4" />
         Your browser does not support the video tag.
     </video>
@@ -80,7 +80,7 @@ function About() {
             <h2 className='text-center mb-5'>Our Team Members</h2>
             <div className='row g-4'>
             {persons.map((person) => (
-            <div key={person.id} className='col-6 col-md-4 col-lg-4 d-flex justify-content-center'>
+            <div key={person.id} className='col-6 col-md-4 col-lg-2 d-flex justify-content-center'>
               <div className="team-card">
                 <img 
                   src={person.img} 
