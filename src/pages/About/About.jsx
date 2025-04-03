@@ -5,7 +5,7 @@ import AboutUsSectionImg from '../../utils/images/marineboost_white.jpeg';
 import ChooseSection from '../../components/ChooseSection/ChooseSection';
 import Person1 from '../../utils/images/team_member/1.jpg';
 import Person2 from '../../utils/images/team_member/2.jpg';
-import Person3 from '../../utils/images/Untitled-1.png';
+import Person3 from '../../utils/images/team_member/Untitled-1.png';
 import Person4 from '../../utils/images/team_member/4.jpg';
 import Person5 from '../../utils/images/team_member/3.jpg';
 
@@ -20,6 +20,7 @@ const persons = [
   { id: 4, img: Person4, name: "Sonu Sankhla", role: "Marketing Head" },
   { id: 5, img: Person5, name: "Jay Prajapati", role: "Website Coordinator" },
 ];
+
 
 function About() {
 
@@ -82,13 +83,13 @@ function About() {
 
                 <h5 className="team-name">{person.name}</h5>
                 <h6 className="team-role">
-                  {person.role.split('\n').map((line, index) => (
-                    <React.Fragment key={index}>
-                      {line}
-                      {index < person.role.split('\n').length - 1 && <br />}
-                    </React.Fragment>
-                  ))}
-                </h6>
+                {person.role.split('\n').map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    {index < person.role.split('\n').length - 1 && <br />}
+                  </React.Fragment>
+                ))}
+              </h6>
 
                 </center>
        
