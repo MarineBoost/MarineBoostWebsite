@@ -59,15 +59,13 @@ function About() {
                         <button type='button' className='btn btn-danger btn-lg mx-0 mx-sm-2 my-2 my-sm-0'>Contact Us</button>
                     </Link>
                 </div>
-                {/* <div className='col-lg-6 d-flex justify-content-center'>
-                    <img src={AboutUsSectionImg} className='img-fluid w-75' alt="" />
-                </div> */}
+        
                 <div className='col-lg-6 d-flex justify-content-center'>
                 <video className='img-fluid' style={{ width: "75%", height: "300px", objectFit: "cover" }} autoPlay loop muted>
-        <source src={AboutUsVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
-</div>
+                    <source src={AboutUsVideo} type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             </div>
         </div>
 

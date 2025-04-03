@@ -11,6 +11,7 @@ import MusicCourseImg from '../../utils/images/music-course.jpg';
 import SportCourseImg from '../../utils/images/e-commerce-marketing.webp';
 import FaqAccordion from '../../components/FaqAccordion/FaqAccordion';
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 import Loader from "../../pages/Loader/Loader";
 
@@ -19,7 +20,8 @@ const courses = [
         id: 1,
         img: [ArtCourseImg],
         title: 'Search Engine Optimization (SEO)',
-        description: 'Helping your business rank higher and get discovered by your target audience.'
+        description: 'Helping your business rank higher and get discovered by your target audience.',
+        link: '/seo'  // Define the route to navigate
     },
     {
         id: 2,
@@ -92,17 +94,19 @@ function Courses() {
 
         <div className='container py-3'>
             <div className='row g-4'>
-                {courses.map((course) => (
-                    <div key={course.id} className='col-lg-6'>
-                        <Card className='text-white shadow scale-hover-effect'>
-                            <Card.Img src={course.img} />
-                            <Card.ImgOverlay className='d-flex flex-column align-items-center justify-content-center p-md-5'>
-                                <Card.Title className='fs-3 text-danger'>{course.title}</Card.Title>
-                                <Card.Text className='text-center'>{course.description}</Card.Text>
-                            </Card.ImgOverlay>
-                        </Card>
-                    </div>
-                ))}
+            {courses.map((course) => (
+                        <div key={course.id} className='col-lg-6'>
+                            <Link to={course.link} className="text-decoration-none">
+                                <Card className='text-white shadow scale-hover-effect'>
+                                    <Card.Img src={course.img} />
+                                    <Card.ImgOverlay className='d-flex flex-column align-items-center justify-content-center p-md-5'>
+                                        <Card.Title className='fs-3 text-danger'>{course.title}</Card.Title>
+                                        <Card.Text className='text-center'>{course.description}</Card.Text>
+                                    </Card.ImgOverlay>
+                                </Card>
+                            </Link>
+                        </div>
+                    ))}
             </div>
         </div>
 

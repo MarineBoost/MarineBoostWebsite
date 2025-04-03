@@ -11,6 +11,9 @@ import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
 import logoImage from './utils/images/marineboost_white.jpeg';
 import Term_condition from './pages/terms_condition/term_condition';
+
+import Seo from './pages/Courses/Seo';
+
 import Donate from './pages/Donate/Donate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
@@ -77,6 +80,7 @@ function App() {
                 { path: "/", label: "Home" },
                 { path: "/services", label: "Services" },
                 { path: "/about", label: "About us" },
+
                 // { path: "/business", label: "Business" },
                 { path: "/contact", label: "Get in touch" },
                 { path: "/term_condition", label: "Terms & Conditions" },
@@ -103,6 +107,8 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/term_condition' element={<Term_condition />} />
         {/* <Route path='/business' element={<Donate />} /> */}
+        Seo
+        <Route path='/seo' element={<Seo />} />
       </Routes>
 
       <button onClick={topFunction} id="myBtn" title="Go to top">
