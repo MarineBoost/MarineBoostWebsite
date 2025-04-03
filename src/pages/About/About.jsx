@@ -72,7 +72,7 @@ function About() {
             <h2 className='text-center mb-5'>Our Team Members</h2>
             <div className='row g-4'>
             {persons.map((person) => (
-            <div key={person.id} className='col-6 col-md-4 col-lg-3 d-flex justify-content-center'>
+            <div key={person.id} className='col-6 col-md-4 col-lg-4 d-flex justify-content-center'>
               <div className="team-card">
                 <img 
                   src={person.img} 
