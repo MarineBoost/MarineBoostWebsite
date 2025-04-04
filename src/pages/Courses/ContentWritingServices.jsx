@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import contentMarketingImage from "../../utils/images/content_marketing_services.webp";
+import { useEffect } from "react";
 
 const contentServices = [
   {

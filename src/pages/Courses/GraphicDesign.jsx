@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import graphicDesignImage from "../../utils/images/graphic_design.jpg";
+import { useEffect } from "react";
 
 const services = [
   

@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import seoImage from "../../utils/images/seo.jpeg"; // SEO image
+import { useEffect } from "react";
 
 const services = [
   {
@@ -75,6 +76,10 @@ const services = [
 ];
 
 const Seo = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Redirects to the top of the page on load
+  }, []);
+
   return (
 <>
       {/* SEO Image */}

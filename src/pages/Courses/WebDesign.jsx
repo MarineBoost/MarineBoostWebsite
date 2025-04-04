@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import webDesignImage from "../../utils/images/computer-science-course.jpg"; 
+import { useEffect } from "react";
 
 const services = [
   {
@@ -80,7 +81,7 @@ const services = [
 ];
 
 const WebDesign = () => {
-  
+
   useEffect(() => {
     window.scrollTo(0, 0); // Redirects to the top of the page on load
   }, []);

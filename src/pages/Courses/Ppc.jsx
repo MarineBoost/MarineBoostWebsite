@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ppcImage from "../../utils/images/seo.jpeg"; 
+import { useEffect } from "react";
 
 
 const services = [

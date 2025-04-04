@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import socialMediaImage from "../../utils/images/digital_marketing_services.webp";
+import { useEffect } from "react";
 
 const services = [
   {
@@ -62,7 +63,7 @@ const SocialMedia = () => {
     useEffect(() => {
         window.scrollTo(0, 0); // Redirects to the top of the page on load
       }, []);
-      
+
   return (
     <>
       <div className="text-center mb-4">

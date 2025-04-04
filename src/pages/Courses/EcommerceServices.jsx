@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ecommerceImage from "../../utils/images/e-commerce-marketing.webp";
+import { useEffect } from "react";
 
 const ecommerceServices = [
   {

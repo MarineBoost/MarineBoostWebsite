@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import analyticsImage from "../../utils/images/music-course.jpg";
+import { useEffect } from "react";
 
 const analyticsServices = [
   {
