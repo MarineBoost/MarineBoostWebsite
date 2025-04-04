@@ -54,14 +54,14 @@ function Contact() {
     const templateParams = {
       from_name: `${firstName} ${lastName}`,
       from_email: email,
-      mobile: mobile,
-      to_name: 'RSAP4YOU',
+      phone: mobile,  // Ensure this matches the EmailJS variable
+      to_name: 'RSAP4YOU',  
       address: address,
-      location: location,
-      postcode: postcode,
+      city: location,  // Ensure this matches the EmailJS variable
+      zip: postcode,   // Ensure this matches the EmailJS variable
       message: message,
     };
-
+    
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
