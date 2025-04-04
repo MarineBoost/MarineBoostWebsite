@@ -27,7 +27,8 @@ const courses = [
         id: 2,
         img: [BusinessCourseImg],
         title: 'Pay-Per-Click (PPC) Advertising',
-        description: 'Driving targeted traffic with data-backed campaigns.'
+        description: 'Driving targeted traffic with data-backed campaigns.',
+        link: '/ppc'  // Define the route to navigate
     },
     {
         id: 3,

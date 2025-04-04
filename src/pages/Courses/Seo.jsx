@@ -104,7 +104,7 @@ const Seo = () => {
           </ul>
         </div>
       </div>
-      
+
       {/* SEO Services */}
       <h2 className="text-primary fw-semibold text-center mt-3">Our SEO Services</h2>
       <div className="row mt-4">
@@ -119,6 +119,12 @@ const Seo = () => {
                       <li key={i}>✅ {detail}</li>
                     ))}
                   </ul>
+                  {/* <img 
+                    src={seoImage} 
+                    alt="SEO Icon" 
+                    className="position-absolute bottom-0 end-0 m-5" 
+                    style={{ width: "150px", height: "auto" }} 
+                  /> */}
                 </div>
             </div>
           </div>

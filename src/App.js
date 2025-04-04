@@ -13,6 +13,7 @@ import logoImage from './utils/images/marineboost_white.jpeg';
 import Term_condition from './pages/terms_condition/term_condition';
 
 import Seo from './pages/Courses/Seo';
+import Ppc from './pages/Courses/Ppc';
 
 import Donate from './pages/Donate/Donate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -107,7 +108,8 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/term_condition' element={<Term_condition />} />
         {/* <Route path='/business' element={<Donate />} /> */}
-        Seo
+
+        <Route path='/ppc' element={<Ppc />} />  
         <Route path='/seo' element={<Seo />} />
       </Routes>
 
