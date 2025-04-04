@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import graphicDesignImage from "../../utils/images/graphic_design.jpg";
 
 const services = [
+  
   {
     title: "Logo Design & Brand Identity",
     details: [
@@ -63,6 +64,10 @@ const services = [
 ];
 
 const GraphicDesign = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Redirects to the top of the page on load
+  }, []);
+  
   return (
     <>
       <div className="text-center mb-4">

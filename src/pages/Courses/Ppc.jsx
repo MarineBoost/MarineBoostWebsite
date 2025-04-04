@@ -64,6 +64,10 @@ const services = [
 ];
 
 const Ppc = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Redirects to the top of the page on load
+  }, []);
+  
   return (
     <>
     <div className="text-center mb-4">
