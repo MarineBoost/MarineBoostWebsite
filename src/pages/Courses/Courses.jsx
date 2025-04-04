@@ -34,37 +34,43 @@ const courses = [
         id: 3,
         img: [ComputerScienceCourseImg],
         title: 'Web Design & Development',
-        description: 'Building user-friendly websites that align with your brand and goals.'
+        description: 'Building user-friendly websites that align with your brand and goals.',
+        link:'/web_design'  // Define the route to navigate
     },
     {
         id: 4,
         img: [EducationCourseImg],
         title: 'Graphic Design',
-        description: 'Social Media Posts, Videos.'
+        description: 'Social Media Posts, Videos.',
+        link:'/graphic_design'  // Define the route to navigate
     },
     {
         id: 5,
         img: [HealthcareCourseImg],
         title: 'Social Media Marketing',
-        description: 'Engaging and growing your online community with impactful social strategies.'
+        description: 'Engaging and growing your online community with impactful social strategies.',
+        link:'/social_media'  // Define the route to navigate
     },
     {
         id: 6,
         img: [LawCourseImg],
         title: 'Content Marketing',
-        description: 'Crafting compelling content that informs, engages, and converts.'
+        description: 'Crafting compelling content that informs, engages, and converts.',
+        link:'/content_writting'
     },
     {
         id: 7,
         img: [MusicCourseImg],
         title: 'Analytics & Reporting',
-        description: 'Offering actionable insights to optimize your campaigns continuously.'
+        description: 'Offering actionable insights to optimize your campaigns continuously.',
+        link :'/analystic'
     },
     {
         id: 8,
         img: [SportCourseImg],
         title: 'E-Commerce Marketplaces',
-        description: 'Amazon, Flipkart, Meesho etc.'
+        description: 'Amazon, Flipkart, Meesho etc.',
+        link:'/commerce' // Define the route to navigate
     },
 ];
 
@@ -78,7 +84,7 @@ function Courses() {
       setTimeout(() => {
         setData("Fetched Data");
         setLoading(false);
-      }, 3000); // Simulate a 2-second delay
+      }, 2000); // Simulate a 2-second delay
     }, []);
 
 

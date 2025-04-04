@@ -18,6 +18,12 @@ import Ppc from './pages/Courses/Ppc';
 import Donate from './pages/Donate/Donate';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import WebDesign from './pages/Courses/WebDesign';
+import GraphicDesign from './pages/Courses/GraphicDesign';
+import SocialMedia from './pages/Courses/SocialMedia';
+import ContentWritingServices from './pages/Courses/ContentWritingServices';
+import AnalyticsMedia from './pages/Courses/AnalyticsMedia';
+import EcommerceServices from './pages/Courses/EcommerceServices';
 
 function App() {
   const location = useLocation(); 
@@ -108,7 +114,12 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/term_condition' element={<Term_condition />} />
         {/* <Route path='/business' element={<Donate />} /> */}
-
+        <Route path='/web_design' element={<WebDesign />} />  
+        <Route path='/graphic_design' element={<GraphicDesign />} />  
+        <Route path='/social_media' element={<SocialMedia />} />  
+        <Route path='/content_writting' element={<ContentWritingServices />} />  
+        <Route path='/analystic' element={<AnalyticsMedia />} />  
+        <Route path='/e-commerce' element={<EcommerceServices />} />  
         <Route path='/ppc' element={<Ppc />} />  
         <Route path='/seo' element={<Seo />} />
       </Routes>
