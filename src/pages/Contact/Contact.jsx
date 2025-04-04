@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Contact.css';
 import KankariyaImg from '../../utils/images/marine_3.jpg';
@@ -10,6 +10,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Swal from 'sweetalert2';
+const { State, City } = require('country-state-city');
 
 function Contact() {
   const form = useRef();
@@ -22,13 +23,27 @@ function Contact() {
   const [postcode, setPostcode] = useState('');
   const [message, setMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
+  const [allCities, setAllCities] = useState([]);
   const navigate = useNavigate();
+
+  // Load all Indian cities when component mounts
+  useEffect(() => {
+    const states = State.getStatesOfCountry('IN');
+    let citiesList = [];
+
+    states.forEach((state) => {
+      const cities = City.getCitiesOfState('IN', state.isoCode);
+      citiesList = [...citiesList, ...cities];
+    });
+
+    setAllCities(citiesList);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     console.log('Form submitted!');
-    // emailjs used 
+
     const serviceId = 'service_76xt7q8';
     const templateId = 'template_jj49wv6';
     const publicKey = 'EGeOqZblf4JbZR64I';
@@ -36,7 +51,7 @@ function Contact() {
     const templateParams = {
       from_name: `${firstName} ${lastName}`,
       from_email: email,
-       mobile:mobile,
+      mobile: mobile,
       to_name: 'RSAP4YOU',
       address: address,
       location: location,
@@ -64,8 +79,8 @@ function Contact() {
         setMessage('');
         setTimeout(() => {
           setSuccessMessage('');
-          navigate('/contact'); // Redirect to the about page
-        }, 3000); // Redirect after 3 seconds (adjust as needed)
+          navigate('/contact');
+        }, 3000);
       })
       .catch((error) => {
         console.error('Error sending email:', error);
@@ -121,6 +136,7 @@ function Contact() {
               />
             </Col>
           </Row>
+
           <Form.Group className="mb-3">
             <Form.Label>Email</Form.Label>
             <Form.Control
@@ -134,10 +150,11 @@ function Contact() {
               We'll never share your email with anyone else.
             </Form.Text>
           </Form.Group>
+
           <Form.Group className="mb-3">
             <Form.Label>Mobile</Form.Label>
             <Form.Control
-              type="mobile"
+              type="text"
               placeholder="Enter Mobile Number"
               value={mobile}
               onChange={(e) => setMobile(e.target.value)}
@@ -168,13 +185,15 @@ function Contact() {
                 onChange={(e) => {
                   console.log("Selected location:", e.target.value);
                   setLocation(e.target.value);
-                  
                 }}
                 required
               >
-                <option>Ahmedabad</option>
-                <option>  <p>Pawapuri</p></option>
-                <option>Nalanda</option>
+                <option value="">-- Select a City --</option>
+                {allCities.map((city, index) => (
+                  <option key={index} value={city.name}>
+                    {city.name}
+                  </option>
+                ))}
               </Form.Control>
             </Col>
 
@@ -226,7 +245,6 @@ function Contact() {
                 alt=""
                 style={{ width: "500px", height: "300px" }}
               />
-              {/* <h3 className="text-center mt-3">Nalanda</h3> */}
             </div>
             <div className="col-lg-4 d-flex flex-column align-items-center">
               <img
@@ -235,7 +253,6 @@ function Contact() {
                 alt=""
                 style={{ width: "500px", height: "300px" }}
               />
-              {/* <h3 className="text-center mt-3">Pawapuri</h3> */}
             </div>
             <div className="col-lg-4 d-flex flex-column align-items-center">
               <img
@@ -244,7 +261,6 @@ function Contact() {
                 alt=""
                 style={{ width: "500px", height: "300px" }}
               />
-        
             </div>
           </div>
         </div>
@@ -254,6 +270,3 @@ function Contact() {
 }
 
 export default Contact;
-
-
- 
