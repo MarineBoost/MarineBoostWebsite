@@ -27,7 +27,7 @@ function ChooseSection() {
                 Why Choose Marine Boost?
                 </Card.Title>
                 <Card.Text className="text-center">
-                Marine Boost offers top-notch marine solutions with cutting-edge technology, ensuring reliability, efficiency, and superior performance for all your marine needs.
+            Marine Boost delivers expert digital marketing and e-commerce solutions to help businesses grow. From SEO and PPC to social media and e-commerce optimization, we provide data-driven strategies for maximum ROI. With transparent reporting, affordable pricing, and proven results, we ensure your brand stands out. Boost your business with Marine Boost! 🚀.
 
 
                 </Card.Text>

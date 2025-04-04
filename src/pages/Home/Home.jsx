@@ -23,11 +23,7 @@ const socialImages  = [
   require("../../utils/images/8.jpg"),
   require("../../utils/images/9.jpg"),
   require("../../utils/images/10.jpg"),
-
-
-
 ];
-
 
 const homePageImages = [
   require("../../utils/images/home-page-header1.jpeg"),
@@ -73,8 +69,10 @@ function Home() {
         </div>
         
       </BackgroundSlideshow>
+
+      
 }
-<center style={{marginTop:"3%"}}><h1 >Working Platforms</h1> </center>
+<center style={{marginTop:"3%"}}><h2 >Working Platforms</h2> </center>
 
      <SocialImageSlider images={socialImages}  />
 
@@ -86,7 +84,8 @@ function Home() {
         <div className="container">
           <div className="row d-flex align-items-center justify-content-around">
             <div className="col-lg-5">
-              <h2 className="text-capitalize">Marine Boost 2025: Elevate Your Digital Growth</h2>
+              <h2 className="text-capitalize">
+                Marine Boost 2025: Elevate Your Digital Growth</h2>
               <p>
                 Stay ahead in 2025 with Marine Boost, your trusted partner in data-driven digital marketing. From SEO and social media
                 to PPC and content marketing, we craft tailored strategies that drive real results.

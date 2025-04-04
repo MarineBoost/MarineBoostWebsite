@@ -88,7 +88,7 @@ function Courses() {
         <header className='height-75'>
             <div className='container h-100 d-flex flex-column align-items-center justify-content-center text-light'>
                 <h1 className='text-center fw-semibold'>Our Services</h1>
-                <p className='text-center w-75 mb-5'>Unlock your potential with Marine Boost's transformative courses, where learning becomes an adventure toward success and excellence.</p>
+                <p className='text-center w-75 mb-5'>At Marine Boost, we offer a full range of digital marketing and e-commerce solutions to help businesses grow, scale, and succeed online.</p>
             </div>
         </header>
 
