@@ -104,7 +104,7 @@ const Seo = () => {
           </ul>
         </div>
       </div>
-
+      
       {/* SEO Services */}
       <h2 className="text-primary fw-semibold text-center mt-3">Our SEO Services</h2>
       <div className="row mt-4">
