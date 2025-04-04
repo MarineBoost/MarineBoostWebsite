@@ -226,8 +226,6 @@ function App() {
                 <p><strong>Email  &nbsp;:</strong> &nbsp; info@marineboost.com</p>
                 <p><strong>Website  &nbsp; :  &nbsp;</strong> <a href="https://www.marineboost.com" target="_blank" rel="noopener noreferrer">www.marineboost.com</a></p>
               </li>
-
-
             </ul>
           </div>
 

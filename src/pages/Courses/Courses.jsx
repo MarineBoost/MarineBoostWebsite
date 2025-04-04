@@ -70,7 +70,7 @@ const courses = [
         img: [SportCourseImg],
         title: 'E-Commerce Marketplaces',
         description: 'Amazon, Flipkart, Meesho etc.',
-        link:'/commerce' // Define the route to navigate
+        link:'/e-commerce' // Define the route to navigate
     },
 ];
 

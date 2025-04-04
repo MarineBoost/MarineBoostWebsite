@@ -10,6 +10,8 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Swal from 'sweetalert2';
+import Select from "react-select";
+
 const { State, City } = require('country-state-city');
 
 function Contact() {
@@ -24,9 +26,10 @@ function Contact() {
   const [message, setMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [allCities, setAllCities] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+
   const navigate = useNavigate();
 
-  // Load all Indian cities when component mounts
   useEffect(() => {
     const states = State.getStatesOfCountry('IN');
     let citiesList = [];
@@ -177,37 +180,31 @@ function Contact() {
           </Form.Group>
 
           <Row className="mb-3">
-            <Col sm={12} md={6} className="mb-3 mb-md-0">
-              <Form.Label>Location</Form.Label>
-              <Form.Control
-                as="select"
-                value={location}
-                onChange={(e) => {
-                  console.log("Selected location:", e.target.value);
-                  setLocation(e.target.value);
-                }}
-                required
-              >
-                <option value="">-- Select a City --</option>
-                {allCities.map((city, index) => (
-                  <option key={index} value={city.name}>
-                    {city.name}
-                  </option>
-                ))}
-              </Form.Control>
-            </Col>
+  <Col sm={12} md={6} className="mb-3 mb-md-0">
+    <Form.Label>Location</Form.Label>
+    
+    {/* Searchable Dropdown */}
+    <Select
+      options={allCities.map((city) => ({ label: city.name, value: city.name }))}
+      value={location ? { label: location, value: location } : null}
+      onChange={(selectedOption) => setLocation(selectedOption.value)}
+      placeholder="-- Select a City --"
+      isSearchable
+    />
+  </Col>
 
-            <Col sm={12} md={6}>
-              <Form.Label>Postcode</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Postcode"
-                value={postcode}
-                onChange={(e) => setPostcode(e.target.value)}
-                required
-              />
-            </Col>
-          </Row>
+  <Col sm={12} md={6}>
+    <Form.Label>Postcode</Form.Label>
+    <Form.Control
+      type="text"
+      placeholder="Postcode"
+      value={postcode}
+      onChange={(e) => setPostcode(e.target.value)}
+      required
+    />
+  </Col>
+</Row>
+
 
           <Form.Group className="mb-3">
             <Form.Label>Your Message</Form.Label>
