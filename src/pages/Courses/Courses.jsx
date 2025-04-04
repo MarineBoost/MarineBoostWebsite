@@ -77,7 +77,7 @@ function Courses() {
       setTimeout(() => {
         setData("Fetched Data");
         setLoading(false);
-      }, 1000); // Simulate a 2-second delay
+      }, 3000); // Simulate a 2-second delay
     }, []);
 
 
