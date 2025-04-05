@@ -47,20 +47,21 @@ function Contact() {
 
     console.log('Form submitted!');
 
-    const serviceId = 'service_76xt7q8';
-    const templateId = 'template_jj49wv6';
-    const publicKey = 'EGeOqZblf4JbZR64I';
+    const serviceId = 'service_z5iw5fd';
+    const templateId = 'template_wy3jvm5';
+    const publicKey = '5Lnxsl26J0_O19Zyy';
 
     const templateParams = {
       from_name: `${firstName} ${lastName}`,
       from_email: email,
       phone: mobile,  
-      to_name: 'RSAP4YOU',  
-      address: address,
+      to_name: 'MarineBoost',  
+      from_address: address,
       city: location,  
       zip: postcode,   
       message: message,
     };
+    console.log('templateParams==========================>>>>>>>>>: ', templateParams);
     
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
