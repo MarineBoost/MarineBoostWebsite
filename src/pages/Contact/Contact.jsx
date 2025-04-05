@@ -63,7 +63,7 @@ function Contact() {
     };
     console.log('templateParams==========================>>>>>>>>>: ', templateParams);
     
-    
+
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
