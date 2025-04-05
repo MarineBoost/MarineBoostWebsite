@@ -67,21 +67,39 @@ const ecommerceServices = [
 ];
 
 const EcommerceServices = () => {
+  
     useEffect(() => {
         window.scrollTo(0, 0); // Redirects to the top of the page on load
       }, []);
+
   return (
     <>
-      <div className="text-center mb-4">
-        <img src={ecommerceImage} alt="E-Commerce Services" className="img-fluid rounded shadow-lg w-100" style={{ maxHeight: "600px", objectFit: "cover" }} />
-      </div>
-      <div className="container py-2">
-        <h1 className="fw-bold text-dark">E-Commerce Marketplace Management Services</h1>
-        <p className="lead">Grow, Optimize & Scale Your Online Business Across Leading Marketplaces</p>
-        <p>
-          Selling on e-commerce marketplaces is one of the most profitable ways to grow your business. However, managing multiple platforms like Amazon, eBay, Walmart, Shopify, Etsy, Flipkart, and others can be complex and time-consuming. At Marine Boost, we offer comprehensive e-commerce marketplace management services to help brands optimize their presence, increase sales, and scale effortlessly.
-        </p>
-        
+      <div className="text-center mb-4 position-relative" style={{ position: "relative" }}>
+  <img
+    src={ecommerceImage}
+    alt="E-Commerce Services"
+    className="img-fluid rounded shadow-lg w-100"
+    style={{ maxHeight: "600px", objectFit: "cover" }}
+  />
+  <div
+    className="position-absolute text-white d-flex flex-column justify-content-center align-items-center"
+    style={{
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(0, 0, 0, 0.4)",
+      padding: "20px",
+    }}
+  >
+    <h2 className="fw-bold display-5">E-Commerce Marketplace Management</h2>
+    <p>
+    Selling on e-commerce marketplaces is a great way to grow your business. At Marine Boost, we simplify multi-platform management—like Amazon, eBay, Shopify, and more—helping you boost visibility, increase sales, and scale with ease.
+  </p>
+  </div>
+</div>
+
+<div className="container py-2">
         <h2 className="text-dark fw-semibold text-center">Our E-Commerce Marketplace Services</h2>
         <div className="row mt-4">
           {ecommerceServices.map((service, index) => (

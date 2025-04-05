@@ -66,15 +66,37 @@ const SocialMedia = () => {
 
   return (
     <>
-      <div className="text-center mb-4">
-        <img src={socialMediaImage} alt="Social Media Marketing" className="img-fluid rounded shadow-lg w-100" style={{ maxHeight: "600px", objectFit: "cover" }} />
-      </div>
-      <div className="container py-2">
-        <h1 className="fw-bold text-dark">Social Media Marketing (SMM) Services</h1>
-        <p className="lead">Boost Engagement, Build Your Brand & Drive Conversions</p>
-        <p>
-          In today’s digital world, social media is the key to brand success. At Marine Boost, we provide expert social media marketing services to help businesses increase brand awareness, engage their audience, and drive sales. Whether you're looking to grow your followers, generate leads, or increase website traffic, our data-driven social media strategies ensure your business stays ahead of the competition.
-        </p>
+ <div className="text-center mb-4 position-relative" style={{ position: "relative" }}>
+  <img
+    src={socialMediaImage}
+    alt="Social Media Marketing"
+    className="img-fluid rounded shadow-lg w-100"
+    style={{ maxHeight: "600px", objectFit: "cover" }}
+  />
+  <div
+    className="position-absolute text-white d-flex flex-column justify-content-center align-items-center"
+    style={{
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(0, 0, 0, 0.4)",
+      padding: "20px",
+    }}
+  >
+    <h2 className="fw-bold display-5">Social Media Marketing (SMM)</h2>
+    <p className="lead">Boost Engagement, Build Your Brand & Drive Conversions</p>
+  </div>
+</div>
+
+<div className="container py-2">
+  <h1 className="fw-bold text-dark">Social Media Marketing (SMM) Services</h1>
+  <p className="lead">Boost Engagement, Build Your Brand & Drive Conversions</p>
+  <p>
+    In today’s digital world, social media is the key to brand success. At Marine Boost, we provide expert social media marketing services to help businesses increase brand awareness, engage their audience, and drive sales. Whether you're looking to grow your followers, generate leads, or increase website traffic, our data-driven social media strategies ensure your business stays ahead of the competition.
+  </p>
+
+
 
         <h2 className="text-dark fw-semibold text-center">Our Social Media Marketing Services</h2>
         <div className="row mt-4">

@@ -71,11 +71,38 @@ const contentServices = [
 ];
 
 const ContentMedia = () => {
+  
+    useEffect(() => {
+      window.scrollTo(0, 0); // Redirects to the top of the page on load
+    }, []);
+    
   return (
     <>
-      <div className="text-center mb-4">
-        <img src={contentMarketingImage} alt="Content Marketing" className="img-fluid rounded shadow-lg w-100" style={{ maxHeight: "600px", objectFit: "cover" }} />
-      </div>
+  <div className="text-center mb-4 position-relative" style={{ position: "relative" }}>
+  <img
+    src={contentMarketingImage}
+    alt="Content Marketing"
+    className="img-fluid rounded shadow-lg w-100"
+    style={{ maxHeight: "600px", objectFit: "cover" }}
+  />
+  <div
+    className="position-absolute text-white d-flex flex-column justify-content-center align-items-center"
+    style={{
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(0, 0, 0, 0.4)",
+      padding: "20px",
+      textAlign: "center",
+    }}
+  >
+    <h2 className="fw-bold display-5">Content Marketing</h2>
+    <p >At Marine Boost, we craft SEO-optimized, engaging content that builds trust, boosts visibility, and drives conversions—across blogs, websites, emails, and social media.</p>
+  </div>
+</div>
+
+
       <div className="container py-2">
        
         <h2 className="text-dark fw-semibold text-center">Our Content Marketing Services</h2>

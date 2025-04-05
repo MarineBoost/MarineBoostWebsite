@@ -88,18 +88,33 @@ const WebDesign = () => {
 
   return (
     <>
-      <div className="text-center mb-4">
-        <img src={webDesignImage} alt="Web Design Services" className="img-fluid rounded shadow-lg w-100" style={{ maxHeight: "400px", objectFit: "cover" }} />
-      </div>
-      <div className="container py-2">
-        <div className="mb-5">
-          <h1 className="fw-bold text-dark">Web Design & Development Services</h1>
-          <p className="lead">Build a Stunning, High-Performing Website with Marine Boost</p>
-          <p>
-            Your website is the digital face of your brand. At Marine Boost, we specialize in custom web design and development
-            to create stunning, user-friendly, and high-converting websites tailored to your business needs.
-          </p>
-        </div>
+   <div className="text-center mb-4 position-relative" style={{ position: "relative" }}>
+  <img
+    src={webDesignImage}
+    alt="Web Design Services"
+    className="img-fluid rounded shadow-lg w-100"
+    style={{ maxHeight: "400px", objectFit: "cover" }}
+  />
+  <div
+    className="position-absolute text-white d-flex flex-column justify-content-center align-items-center"
+    style={{
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(0, 0, 0, 0.4)",
+      padding: "20px",
+    }}
+  >
+    <h2 className="fw-bold display-5">Web Design & Development</h2>
+    <p>
+      Your website is the digital face of your brand. At Marine Boost, we specialize in custom web design and development
+      to create stunning, user-friendly, and high-converting websites tailored to your business needs.
+    </p>
+  </div>
+</div>
+
+<div className="container py-2">
 
         <h2 className="text-dark fw-semibold text-center">Our Web Design & Development Services</h2>
         <div className="row mt-4">

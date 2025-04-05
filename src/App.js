@@ -120,6 +120,7 @@ function App() {
         <Route path='/content_writting' element={<ContentWritingServices />} />  
         <Route path='/analystic' element={<AnalyticsMedia />} />  
         <Route path='/e-commerce' element={<EcommerceServices />} />  
+        
         <Route path='/ppc' element={<Ppc />} />  
         <Route path='/seo' element={<Seo />} />
       </Routes>
@@ -128,7 +129,7 @@ function App() {
         <FontAwesomeIcon icon={faArrowUp} className="icon-large" />
       </button>
       <footer style={{backgroundColor:"#d3d3d3"}}>
-  
+
   <div className='container p-3' >
     <div className='row d-flex justify-content-between align-items-center'>
 

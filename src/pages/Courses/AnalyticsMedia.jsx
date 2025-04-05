@@ -68,11 +68,45 @@ const analyticsServices = [
 ];
 
 const AnalyticsMedia = () => {
+
+    useEffect(() => {
+      window.scrollTo(0, 0); // Redirects to the top of the page on load
+    }, []);
+    
   return (
     <>
-      <div className="text-center mb-4">
-        <img src={analyticsImage} alt="Analytics & Reporting" className="img-fluid rounded shadow-lg w-100" style={{ maxHeight: "600px", objectFit: "cover" }} />
-      </div>
+     <div className="text-center mb-4 position-relative" style={{ position: "relative" }}>
+  <img
+    src={analyticsImage}
+    alt="Analytics & Reporting"
+    className="img-fluid rounded shadow-lg w-100"
+    style={{ maxHeight: "600px", objectFit: "cover" }}
+  />
+  <div
+    className="position-absolute text-white d-flex flex-column justify-content-center align-items-center"
+    style={{
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(0, 0, 0, 0.4)",
+      padding: "20px",
+      textAlign: "center",
+    }}
+  >
+    <h2 className="fw-bold display-5">Analytics & Reporting</h2>
+    <p className="lead">Track, Analyze & Optimize for Maximum Performance</p>
+  </div>
+</div>
+
+<div className="container py-2">
+  <h1 className="fw-bold text-dark">Analytics & Reporting Services</h1>
+  <p className="lead">Track, Analyze & Optimize for Maximum Performance</p>
+  <p>
+  At Marine Boost, we turn data into action—helping you track performance, improve ROI, and make smarter marketing decisions.
+  </p>
+</div>
+
       <div className="container py-2">
         <h1 className="fw-bold text-dark">Analytics & Reporting Services</h1>
         <p className="lead">Track, Analyze & Optimize for Maximum Performance</p>

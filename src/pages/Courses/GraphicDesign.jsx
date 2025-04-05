@@ -71,20 +71,34 @@ const GraphicDesign = () => {
   
   return (
     <>
-      <div className="text-center mb-4">
-        <img src={graphicDesignImage} alt="Graphic Design Services" className="img-fluid rounded shadow-lg w-100" style={{ maxHeight: "600px", objectFit: "cover" }} />
-      </div>
-      <div className="container py-2">
-        <div className="mb-5">
-          <h1 className="fw-bold text-dark">Graphic Design Services</h1>
-          <p className="lead">Creative, Impactful & Brand-Driven Designs by Marine Boost</p>
-          <p>
-            In today’s digital world, visual identity is everything. At Marine Boost, we craft stunning, high-quality, and impactful
-            graphic designs that bring your brand to life. From logos to social media graphics and marketing materials, our expert designers
-            create visually compelling designs that leave a lasting impression.
-          </p>
-        </div>
+  <div className="text-center mb-4 position-relative" style={{ position: "relative" }}>
+  <img
+    src={graphicDesignImage}
+    alt="Graphic Design Services"
+    className="img-fluid rounded shadow-lg w-100"
+    style={{ maxHeight: "600px", objectFit: "cover" }}
+  />
+  <div
+    className="position-absolute text-white d-flex flex-column justify-content-center align-items-center"
+    style={{
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(0, 0, 0, 0.4)",
+      padding: "20px",
+    }}
+  >
+    <h2 className="fw-bold display-5">Graphic Design Services</h2>
+    <p>
+      In today’s digital world, visual identity is everything. At Marine Boost, we craft stunning, high-quality, and impactful
+      graphic designs that bring your brand to life. From logos to social media graphics and marketing materials, our expert designers
+      create visually compelling designs that leave a lasting impression.
+    </p>
+  </div>
+</div>
 
+<div className="container py-2">
         <h2 className="text-dark fw-semibold text-center">Our Graphic Design Services</h2>
         <div className="row mt-4">
           {services.map((service, index) => (

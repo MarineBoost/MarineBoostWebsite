@@ -71,23 +71,37 @@ const Ppc = () => {
   
   return (
     <>
-    <div className="text-center mb-4">
-    <img src={ppcImage} alt="PPC Services" className="img-fluid rounded shadow-lg w-100" style={{ maxHeight: "400px", objectFit: "cover" }} />
-  </div>
-  <div className="container py-2">
-      {/* Header Section */}
-      <div className=" mb-5">
-        <h1 className="fw-bold text-dark">Pay-Per-Click (PPC) Advertising Services</h1>
-        <p className="lead">Drive Instant Traffic & Maximize ROI with PPC Marketing</p>
-        <p>
+<div className="text-center mb-4 position-relative" style={{ position: "relative" }}>
+  <img
+    src={ppcImage}
+    alt="PPC Services"
+    className="img-fluid rounded shadow-lg w-100"
+    style={{ maxHeight: "400px", objectFit: "cover" }}
+  />
+  <div
+    className="position-absolute text-white d-flex flex-column justify-content-center align-items-center"
+    style={{
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(0, 0, 0, 0.4)",
+      padding: "20px",
+    }}
+  >
+    <h2 className="fw-bold display-5">Pay-Per-Click (PPC) Advertising</h2>
+    <p>
           In today’s digital landscape, organic growth takes time. With Pay-Per-Click (PPC) advertising, you can
           instantly attract highly targeted traffic and boost conversions. At Marine Boost, we craft data-driven
           PPC campaigns that maximize your ROI.
         </p>
-      </div>
+  </div>
+</div>
 
-      {/* Why PPC Matters */}
-      <h2 className="text-dark fw-semibold">🚀 Why PPC?</h2>
+
+
+  <div className="container py-2">
+      <h2 className="text-primary fw-semibold">🚀 Why PPC?</h2>
       <div className="row justify-content mb-5">
         <div className="col-md-8">
           <ul className="list-group list-group-flush">
@@ -100,14 +114,15 @@ const Ppc = () => {
       </div>
 
       {/* Our PPC Services */}
-      <h2 className="text-dark fw-semibold text-center">Our PPC Advertising Services</h2>
+      <h2 className="text-primary fw-semibold text-center">Our PPC Advertising Services</h2>
       <div className="row mt-4">
         {services.map((service, index) => (
           <div key={index} className="col-lg-4 col-md-6 mb-4">
             <div className="card h-100 border-0 shadow-sm p-3">
-              <h3 className="text-dark">{index + 1}. {service.title}</h3>
+              <h3 className="text-primary">{index + 1}. {service.title}</h3>
               <ul className="list-unstyled mt-2">
               {service.details.map((detail, i) => (
+              
                   <li key={i} className="d-flex align-items-center mb-2">
                     <span className="me-2">✅</span>
                     <span className="fw-semibold text-dark">{detail}</span>
@@ -120,7 +135,7 @@ const Ppc = () => {
       </div>
 
       {/* Our PPC Process */}
-      <h2 className="text-dark fw-semibold mt-5">Our PPC Process: How We Deliver Results</h2>
+      <h2 className="text-primary fw-semibold mt-5">Our PPC Process: How We Deliver Results</h2>
       <div className="row justify-content">
         <div className="col-md-8">
           <ul className="list-group list-group-flush">
@@ -133,7 +148,7 @@ const Ppc = () => {
       </div>
 
       {/* Why Choose Marine Boost? */}
-      <h2 className="text-dark fw-semibold mt-5">Why Choose Marine Boost for PPC?</h2>
+      <h2 className="text-primary fw-semibold mt-5">Why Choose Marine Boost for PPC?</h2>
       <div className="row justify-content">
         <div className="col-md-8">
           <ul className="list-group list-group-flush">

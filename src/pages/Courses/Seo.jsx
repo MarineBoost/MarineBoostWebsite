@@ -83,19 +83,47 @@ const Seo = () => {
   return (
 <>
       {/* SEO Image */}
-      <div className="text-center mb-12">
-        <img src={seoImage} alt="SEO Services" className="img-fluid rounded shadow-lg w-100" style={{ maxHeight: "400px", objectFit: "cover" }} />
-      </div>
+      <div className="text-center mb-12 position-relative" style={{ position: "relative" }}>
+  <img
+    src={seoImage}
+    alt="SEO Services"
+    className="img-fluid rounded shadow-lg w-100"
+    style={{ maxHeight: "400px", objectFit: "cover" }}
+  />
+  <div
+    className="position-absolute text-white d-flex flex-column justify-content-center align-items-center"
+    style={{
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(0, 0, 0, 0.4)", // optional dark overlay for better readability
+      padding: "20px",
+    }}
+  >
+    <h4 className="fw-bold display-4">Search Engine Optimization (SEO)</h4>
+    {/* <p className="lead">Maximize Your Online Presence with Marine Boost</p> */}
+    <p >
+    In today's digital world, SEO is the key to driving organic traffic, increasing brand visibility, and improving sales conversions.
+    <p> 
 
-      {/* SEO Header & Description */}
-      <div className="text-center bg-light p-5 rounded shadow-sm">
-        <h1 className="fw-bold text-primary mb-3">Search Engine Optimization (SEO)</h1>
-        <p className="lead">Maximize Your Online Presence with Marine Boost’s SEO Services</p>
-        <p className="text-muted">
-          In today's digital world, SEO is the key to driving organic traffic, increasing brand visibility, and improving sales conversions.
-          At Marine Boost, we provide data-driven SEO strategies that help businesses rank higher on search engines like Google, Bing, and Yahoo.
-        </p>
-      </div>
+    At Marine Boost, we provide data-driven SEO strategies that help businesses rank higher on search engines like Google, Bing, and Yahoo.
+    </p>
+  </p>
+  </div>
+</div>
+
+{/* SEO Header & Description */}
+{/* <div className="text-center bg-light p-5 rounded shadow-sm">
+  <h1 className="fw-bold text-primary mb-3">Search Engine Optimization (SEO)</h1>
+  <p className="lead">Maximize Your Online Presence with Marine Boost’s SEO Services</p>
+  <p className="text-muted">
+    In today's digital world, SEO is the key to driving organic traffic, increasing brand visibility, and improving sales conversions.
+    At Marine Boost, we provide data-driven SEO strategies that help businesses rank higher on search engines like Google, Bing, and Yahoo.
+  </p>
+</div> */}
+
+
 
       {/* Why SEO Matters */}
       <h2 className="text-primary fw-semibold text-center mt-3">Why SEO Matters for Your Business?</h2>
