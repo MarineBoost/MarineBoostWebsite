@@ -38,21 +38,22 @@ function Home() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    // Simulate an async operation like fetching data
+  
     setTimeout(() => {
       setData("Fetched Data");
       setLoading(false);
-    }, 1000); // Simulate a 2-second delay
+    }, 1000); 
   }, []);
   useEffect(() => {
-    window.scrollTo(0, 0); // Redirects to the top of the page on load
+    window.scrollTo(0, 0); 
   }, []);
   
-  
+
 
   return (
-    <div className="home-page">
+    <> 
        {loading ? <Loader /> :
+    <div className="home-page">
       <BackgroundSlideshow images={homePageImages} className="header h-100 min-vh-100 d-flex align-items-center text-light">
       <div className="container d-flex flex-column align-items-center mt-5">
           <h2>Welcome To</h2>
@@ -75,7 +76,7 @@ function Home() {
       </BackgroundSlideshow>
 
       
-}
+
 <center style={{marginTop:"3%"}}><h2 >Working Platforms</h2> </center>
 
      <SocialImageSlider images={socialImages}  />
@@ -111,6 +112,8 @@ function Home() {
         <FaqAccordion />
       </div>
     </div>
+    }
+    </>
   );
 }
 
