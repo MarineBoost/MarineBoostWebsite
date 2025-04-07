@@ -70,3 +70,4 @@ function FaqAccordion() {
 }
 
 export default FaqAccordion;
+
