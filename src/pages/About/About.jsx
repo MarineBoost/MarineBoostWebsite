@@ -35,7 +35,11 @@ function About() {
       setLoading(false);
     }, 1000); 
   }, []);
-
+  
+  useEffect(() => {
+    window.scrollTo(0, 0); // Redirects to the top of the page on load
+  }, []);
+  
 
   return (
     <> 

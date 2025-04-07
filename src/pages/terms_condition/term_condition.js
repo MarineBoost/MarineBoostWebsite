@@ -2,7 +2,14 @@ import React from 'react';
 import './term_condition.css';
 import image_header from '../../utils/images/about-page-header.jpg'
 
+import { useState, useEffect } from "react";
+
 const Term_condition = () => {
+
+    useEffect(() => {
+      window.scrollTo(0, 0); // Redirects to the top of the page on load
+    }, []);
+    
   return (
 
     <div className="term-page-fluid">

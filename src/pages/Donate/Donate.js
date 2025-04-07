@@ -44,6 +44,7 @@ const services = [
 
 const Donate = () => {
 
+
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState(null);
   
@@ -53,7 +54,12 @@ const Donate = () => {
         setLoading(false);
       }, 2000); 
     }, []);
-
+    
+    useEffect(() => {
+      window.scrollTo(0, 0); // Redirects to the top of the page on load
+    }, []);
+  
+    
   return (
 
     <>

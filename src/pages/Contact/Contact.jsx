@@ -41,6 +41,11 @@ function Contact() {
 
     setAllCities(citiesList);
   }, []);
+  
+  useEffect(() => {
+    window.scrollTo(0, 0); // Redirects to the top of the page on load
+  }, []);
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -269,3 +274,6 @@ function Contact() {
 }
 
 export default Contact;
+
+
+
