@@ -2,6 +2,7 @@
 import React from 'react';
 import './FaqAccordion.css';
 import Accordion from 'react-bootstrap/Accordion';
+import AdsComponent from '../ChooseSection/AdsComponent';
 
 function FaqAccordion() {
   return (
@@ -61,6 +62,8 @@ function FaqAccordion() {
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
+
+            <AdsComponent dataAdSlot='7949681741' />
         </div>
     </div>
   )
