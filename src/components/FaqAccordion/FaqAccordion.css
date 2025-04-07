@@ -23,3 +23,22 @@
         width: 100%;
     }
 }
+
+
+.faq-wrapper {
+    padding: 40px 0;
+}
+
+.faq-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.faq-ad {
+    width: 160px; /* Adjust size of the ad space */
+}
+
+.faq-section {
+    max-width: 800px;
+}
