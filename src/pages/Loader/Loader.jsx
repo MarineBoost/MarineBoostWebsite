@@ -33,7 +33,7 @@ const Loader = () => {
         <ColorRing
           visible={true}
           height="150"
-          width="150"
+          width="100"
           ariaLabel="color-ring-loading"
           wrapperStyle={{}}
           wrapperClass="color-ring-wrapper"
