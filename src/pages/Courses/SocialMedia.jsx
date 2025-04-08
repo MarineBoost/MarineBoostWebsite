@@ -90,13 +90,6 @@ const SocialMedia = () => {
 </div>
 
 <div className="container py-2">
-  <h1 className="fw-bold text-dark">Social Media Marketing (SMM) Services</h1>
-  <p className="lead">Boost Engagement, Build Your Brand & Drive Conversions</p>
-  <p>
-    In today’s digital world, social media is the key to brand success. At Marine Boost, we provide expert social media marketing services to help businesses increase brand awareness, engage their audience, and drive sales. Whether you're looking to grow your followers, generate leads, or increase website traffic, our data-driven social media strategies ensure your business stays ahead of the competition.
-  </p>
-
-
 
         <h2 className="text-dark fw-semibold text-center">Our Social Media Marketing Services</h2>
         <div className="row mt-4">

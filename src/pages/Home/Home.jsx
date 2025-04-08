@@ -100,7 +100,6 @@ function Home() {
               </Link>
             </div>
 
-
             <div className="col-lg-5 mt-5 mt-lg-0">
               <img src={StartCoursesImg} className="img-fluid" alt="" />
             </div>
