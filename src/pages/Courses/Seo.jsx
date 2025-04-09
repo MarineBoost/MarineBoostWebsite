@@ -77,7 +77,7 @@ const services = [
 
 const Seo = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Redirects to the top of the page on load
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -97,7 +97,7 @@ const Seo = () => {
       left: 0,
       width: "100%",
       height: "100%",
-      backgroundColor: "rgba(0, 0, 0, 0.4)", // optional dark overlay for better readability
+      backgroundColor: "rgba(0, 0, 0, 0.4)", 
       padding: "20px",
     }}
   >

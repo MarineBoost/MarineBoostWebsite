@@ -1,17 +1,16 @@
 .courses-page header {
     background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), 
                       url(../../utils/images/courses-page-header.jpg);
-    background-size: cover;  /* Ensures the image covers the entire area */
-    background-position: center;  /* Centers the image */
+    background-size: cover; 
+    background-position: center;  
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 300px;  /* Adjust height based on design needs */
+    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Make sure the card images inside are responsive */
 .courses-page .card-img {
     width: 100%;
     height: auto;

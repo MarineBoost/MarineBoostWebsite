@@ -61,7 +61,7 @@ const services = [
 
 const SocialMedia = () => {
     useEffect(() => {
-        window.scrollTo(0, 0); // Redirects to the top of the page on load
+        window.scrollTo(0, 0); 
       }, []);
 
   return (
@@ -87,6 +87,7 @@ const SocialMedia = () => {
     <h2 className="fw-bold display-5">Social Media Marketing (SMM)</h2>
     <p className="lead">Boost Engagement, Build Your Brand & Drive Conversions</p>
   </div>
+  
 </div>
 
 <div className="container py-2">

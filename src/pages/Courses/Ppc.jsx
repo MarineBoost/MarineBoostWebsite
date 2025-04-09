@@ -66,7 +66,7 @@ const services = [
 
 const Ppc = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Redirects to the top of the page on load
+    window.scrollTo(0, 0);
   }, []);
   
   return (
@@ -132,6 +132,7 @@ const Ppc = () => {
             </div>
           </div>
         ))}
+
       </div>
 
       {/* Our PPC Process */}

@@ -25,6 +25,7 @@ import ContentWritingServices from './pages/Courses/ContentWritingServices';
 import AnalyticsMedia from './pages/Courses/AnalyticsMedia';
 import EcommerceServices from './pages/Courses/EcommerceServices';
 
+
 function App() {
   const location = useLocation(); 
   const [expanded, setExpanded] = useState(false);
@@ -198,7 +199,7 @@ function App() {
               <Link to="/" className='text-decoration-none text-danger'>
                 <li className='text-uppercase fw-semibold'>Home</li>
               </Link>
-              <Link to="/courses" className='text-decoration-none text-danger'>
+              <Link to="/services" className='text-decoration-none text-danger'>
                 <li className='text-uppercase fw-semibold'>Our Services</li>
               </Link>
               <Link to="/about" className='text-decoration-none text-danger'>
