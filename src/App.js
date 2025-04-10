@@ -194,29 +194,32 @@ function App() {
 
       <div className='col-md-7 col-lg-6'>
         <div className='d-row d-md-flex justify-content-between align-items-center'>
-          <div className='col-12 col-md-6 col-lg-5 mb-5 mt-4 my-md-0'>
+
+
+        <div className='col-12 col-md-6 col-lg-5 mb-5 mt-4 my-md-0'>
             <ul className='footer-navigation list-unstyled mb-0'>
+             
               <Link to="/" className='text-decoration-none text-danger'>
-                <li className='text-uppercase fw-semibold'>Home</li>
+                <li className='text-uppercase fw-semibold mt-2'>Home</li>
               </Link>
               <Link to="/services" className='text-decoration-none text-danger'>
-                <li className='text-uppercase fw-semibold'>Our Services</li>
+                <li className='text-uppercase fw-semibold mt-2'>Our Services</li>
               </Link>
               <Link to="/about" className='text-decoration-none text-danger'>
-                <li className='text-uppercase fw-semibold'>About us</li>
+                <li className='text-uppercase fw-semibold mt-2'>About us</li>
               </Link>
               {/* <Link to="/blog" className='text-decoration-none text-danger'>
-                <li className='text-uppercase fw-semibold'>Blog</li>
+                <li className='text-uppercase fw-semibold mt-2'>Blog</li>
               </Link> */}
-                <Link to="/term_condition" className='text-decoration-none text-danger'>
-                <li className='text-uppercase fw-semibold'>Terms&condition</li>
+              <Link to="/term_condition" className='text-decoration-none text-danger'>
+                <li className='text-uppercase fw-semibold mt-2'>Terms & Condition</li>
               </Link>
               <Link to="/contact" className='text-decoration-none text-danger'>
-                <li className='text-uppercase fw-semibold'>Get In Touch</li>
+                <li className='text-uppercase fw-semibold mt-2'>Get In Touch</li>
               </Link>
-            
             </ul>
           </div>
+
           <div className='col-12 col-md-6 col-lg-7'>
             <ul className='list-unstyled mb-0'>
               <li>
