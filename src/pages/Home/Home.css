@@ -12,6 +12,7 @@
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    
 }
 
 /* Responsive adjustments */
@@ -174,4 +175,5 @@
       height: 30vh; /* Even smaller height for very small screens */
     }
   }
+  
   
