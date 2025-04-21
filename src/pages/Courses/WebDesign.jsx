@@ -88,8 +88,10 @@ const WebDesign = () => {
 
   return (
     <>
-   <div className="text-center mb-4 position-relative" style={{ position: "relative" }}>
-  <img
+
+   <div clas
+   sName="text-center mb-4 position-relative" style={{ position: "relative" }}>
+   <img
     src={webDesignImage}
     alt="Web Design Services"
     className="img-fluid rounded shadow-lg w-100"
@@ -117,6 +119,7 @@ const WebDesign = () => {
 <div className="container py-2">
 
         <h2 className="text-dark fw-semibold text-center">Our Web Design & Development Services</h2>
+       
         <div className="row mt-4">
           {services.map((service, index) => (
             <div key={index} className="col-lg-4 col-md-6 mb-4">
@@ -134,6 +137,7 @@ const WebDesign = () => {
             </div>
           ))}
         </div>
+
       </div>
     </>
   );

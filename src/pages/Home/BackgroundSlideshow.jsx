@@ -39,9 +39,7 @@ const BackgroundSlideshow = ({ images, children }) => {
         position: "relative",
       }}
     >
-      {children}
-
-
+    
       {/* <button className="arrow left-arrow" onClick={handlePrev}>
         <FaArrowLeft />
       </button>

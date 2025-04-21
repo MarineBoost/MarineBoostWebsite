@@ -75,24 +75,15 @@ const SocialMedia = () => {
   />
   <div
     className="position-absolute text-white d-flex flex-column justify-content-center align-items-center"
-    style={{
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      backgroundColor: "rgba(0, 0, 0, 0.4)",
-      padding: "20px",
-    }}
   >
     <h2 className="fw-bold display-5">Social Media Marketing (SMM)</h2>
     <p className="lead">Boost Engagement, Build Your Brand & Drive Conversions</p>
   </div>
-  
 </div>
 
 <div className="container py-2">
 
-        <h2 className="text-dark fw-semibold text-center">Our Social Media Marketing Services</h2>
+        <h2 className="text-dark fw-semibold text-center"> Our Social Media Marketing Services </h2>
         <div className="row mt-4">
           {services.map((service, index) => (
             <div key={index} className="col-lg-4 col-md-6 mb-4">
@@ -101,7 +92,7 @@ const SocialMedia = () => {
                 <ul className="list-unstyled mt-2">
                   {service.details.map((detail, i) => (
                     <li key={i} className="d-flex align-items-center mb-2">
-                      <span className="me-2">✅</span>
+                      <span className="me-2">✅</span> 
                       <span className="fw-semibold text-dark">{detail}</span>
                     </li>
                   ))}

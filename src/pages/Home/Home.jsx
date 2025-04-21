@@ -31,6 +31,11 @@ const homePageImages = [
   require("../../utils/images/home-page-header3.jpeg"),
 ];
 function Home() {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0); // Redirects to the top of the page on load
+  }, []);
+
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
@@ -44,9 +49,8 @@ function Home() {
       setLoading(false);
     }, 1000); 
   }, []);
-  useEffect(() => {
-    window.scrollTo(0, 0); 
-  }, []);
+
+
   
 
 

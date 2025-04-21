@@ -11,6 +11,7 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Swal from 'sweetalert2';
 import Select from "react-select";
+import Loader from "../../pages/Loader/Loader";
 
 const { State, City } = require('country-state-city');
 
@@ -29,7 +30,18 @@ function Contact() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(null);
 
+    
+      useEffect(() => {
+      
+        setTimeout(() => {
+          setData("Fetched Data");
+          setLoading(false);
+        }, 1000); 
+      }, []);
+      
   useEffect(() => {
     const states = State.getStatesOfCountry('IN');
     let citiesList = [];
@@ -103,7 +115,9 @@ function Contact() {
   };
 
   return (
-    <div className="contact-page">
+    <>  
+  {loading ? <Loader /> :
+       <div className="contact-page">
       {/* Header Section */}
       <header className="height-75">
         <div className="container h-100 d-flex flex-column align-items-center justify-content-center text-light">
@@ -270,6 +284,9 @@ function Contact() {
         </div>
       </div>
     </div>
+}
+     </>
+ 
   );
 }
 

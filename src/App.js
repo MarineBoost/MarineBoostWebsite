@@ -27,6 +27,12 @@ import EcommerceServices from './pages/Courses/EcommerceServices';
 
 
 function App() {
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Redirects to the top of the page on load
+  }, []);
+  
   const location = useLocation(); 
   const [expanded, setExpanded] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -75,8 +81,6 @@ function App() {
               </span>
             </Link>
           </Navbar.Brand>
-
-          
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             className="bg-light"

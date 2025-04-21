@@ -3,16 +3,29 @@ import './term_condition.css';
 import image_header from '../../utils/images/about-page-header.jpg'
 
 import { useState, useEffect } from "react";
-
+import Loader from "../../pages/Loader/Loader";
 const Term_condition = () => {
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(null);
 
     useEffect(() => {
       window.scrollTo(0, 0); 
     }, []);
     
+
+  
+    useEffect(() => {
     
+      setTimeout(() => {
+        setData("Fetched Data");
+        setLoading(false);
+      }, 1000); 
+    }, []);
+
   return (
 
+    <>
+      {loading ? <Loader /> :
     <div className="term-page-fluid">
       <div className='image_div'>
       <div className='center-container'>
@@ -45,6 +58,9 @@ const Term_condition = () => {
 </div>
 
     </div>
+}
+     </>
+    
   );
 };
 

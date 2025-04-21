@@ -4,6 +4,7 @@ import seoImage from "../../utils/images/seo.jpeg"; // SEO image
 import { useEffect } from "react";
 
 const services = [
+  
   {
     title: "SEO Audit & Strategy Development",
     details: ["Technical SEO Issues", "Keyword Analysis", "Competitor Research", "Content Gaps"],
@@ -111,6 +112,8 @@ const Seo = () => {
     </p>
   </p>
   </div>
+
+
 </div>
 
 {/* SEO Header & Description */}

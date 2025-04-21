@@ -65,6 +65,7 @@ const services = [
 ];
 
 const Ppc = () => {
+ 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -97,8 +98,6 @@ const Ppc = () => {
         </p>
   </div>
 </div>
-
-
 
   <div className="container py-2">
       <h2 className="text-primary fw-semibold">🚀 Why PPC?</h2>
