@@ -4,15 +4,20 @@ import './Contact.css';
 import KankariyaImg from '../../utils/images/marine_3.jpg';
 import Jal_mandir from '../../utils/images/marine_2.jpg';
 import Nalanda_university from '../../utils/images/marine_1.jpg';
+import pic1 from '../../utils/images/London-location.jpg';
+import pic2 from '../../utils/images/Manchester-location.jpg';
+import pic3 from '../../utils/images/food_safety_and_standard_authority_of_india_clean_street_food_hub_ahmedabad_kankaria_lake_1536401601.jpg';
 import emailjs from '@emailjs/browser';
-import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Button from 'react-bootstrap/Button';
+import { Container, Row , Col, Form, Button } from "react-bootstrap";
+
 import Swal from 'sweetalert2';
 import Select from "react-select";
 import Loader from "../../pages/Loader/Loader";
+import Carousel from "react-bootstrap/Carousel";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-multi-carousel/lib/styles.css";
 
+import GallerySection from './Gallery';
 const { State, City } = require('country-state-city');
 
 function Contact() {
@@ -58,6 +63,15 @@ function Contact() {
     window.scrollTo(0, 0); // Redirects to the top of the page on load
   }, []);
   
+  const images = [
+    { src: KankariyaImg, title: 'Kankariya Lake' },
+    { src: Jal_mandir, title: 'Jal Mandir' },
+    { src: Nalanda_university, title: 'Nalanda University' },
+    { src: pic1, title: 'Nalanda University' },
+    { src: pic2, title: 'Nalanda University' },
+    { src: pic3, title: 'Nalanda University' },
+  ];
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -251,39 +265,18 @@ function Contact() {
         </div>
       )}
 
-      {/* Our Locations Section */}
-      <div className="bg-dark text-light p-5">
-        <div className="container">
-          <h2 className="text-center mb-5">Gallery</h2>
-          <div className="row g-4">
-            <div className="col-lg-4 d-flex flex-column align-items-center">
-              <img
-                src={Nalanda_university}
-                className="img-fluid"
-                alt=""
-                style={{ width: "500px", height: "300px" }}
-              />
-            </div>
-            <div className="col-lg-4 d-flex flex-column align-items-center">
-              <img
-                src={Jal_mandir}
-                className="img-fluid"
-                alt=""
-                style={{ width: "500px", height: "300px" }}
-              />
-            </div>
-            <div className="col-lg-4 d-flex flex-column align-items-center">
-              <img
-                src={KankariyaImg}
-                className="img-fluid"
-                alt=""
-                style={{ width: "500px", height: "300px" }}
-              />
-            </div>
-          </div>
+  
+
+
+    <div className="bg-light text-dark py-1">
+ 
+        <h2 className="text-center"  style={{ color: '#e91e63', fontWeight: 'bold' }}>Gallery</h2>
+     
+      <GallerySection/>
+
         </div>
       </div>
-    </div>
+  
 }
      </>
  

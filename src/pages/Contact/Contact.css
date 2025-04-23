@@ -46,3 +46,86 @@
         height: 250px;
     }
 }
+
+/* Carousel Group Styles */
+.carousel-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; /* Adjusted gap to a consistent size */
+    padding: 10px;
+    width: 100%; /* Ensure it takes full width */
+    max-width: 1200px; /* Optional: restrict max width */
+    margin: 0 auto; /* Center the carousel group */
+}
+
+/* Carousel Image Wrapper */
+.carousel-image-wrapper {
+    flex: 1 1 calc(33.33% - 16px); /* Show 3 images per row on desktop */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center images */
+    height: 200px; /* Fixed height for consistency */
+    overflow: hidden; /* Ensure no overflow if image doesn't perfectly fit */
+}
+
+/* Carousel Image */
+.carousel-image {
+    width: 100%; /* Make the image take full width of the container */
+    height: 100%; /* Make sure the image takes the full height of the container */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
+    border-radius: 12px;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    .carousel-image-wrapper {
+        flex: 1 1 calc(100% - 16px); /* Show 1 image per row on small screens */
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .carousel-image-wrapper {
+        flex: 1 1 calc(50% - 16px); /* Show 2 images per row on tablets */
+        max-width: calc(50% - 16px);
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-image-wrapper {
+        flex: 1 1 calc(33.33% - 16px); /* Show 3 images per row on desktops */
+        max-width: calc(33.33% - 16px);
+    }
+}
+
+/* Hide default carousel arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none !important; /* Ensure the default icons are completely hidden */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%; /* Adjust size of the clickable area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Custom left arrow */
+.carousel-control-prev::after {
+    content: '‹'; /* left arrow */
+    font-size: 4rem;
+    color: black;
+    display: block;
+}
+
+/* Custom right arrow */
+.carousel-control-next::after {
+    content: '›'; /* right arrow */
+    font-size: 4rem;
+    color: black;
+    display: block;
+}

@@ -184,11 +184,32 @@ function App() {
             href="https://www.linkedin.com/in/marine-boost-46793a332/" 
             target="_blank" 
             rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              width: '40px',
+              height: '40px',
+              borderRadius: '50%',
+              backgroundColor: '#0077B5',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textDecoration: 'none',
+            }}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0077B5" className="bi bi-linkedin" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.417 0 1.043 0h13.914C15.583 0 16 .513 16 1.146v13.708c0 .633-.417 1.146-1.043 1.146H1.043C.417 16 0 15.487 0 14.854V1.146zM4.943 12.375V6.75H2.625v5.625h2.318zM3.784 5.781a1.281 1.281 0 1 1 0-2.563 1.281 1.281 0 0 1 0 2.563zM13.375 12.375V9.336c0-1.82-.967-2.656-2.261-2.656-1.039 0-1.503.72-1.766 1.223v-1.06H7.044v5.532h2.304V9.677c0-.716.134-1.409.986-1.409s.844.774.844 1.447v2.66h2.197z"/>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="20" 
+              height="20" 
+              viewBox="0 0 448 512" 
+              fill="#ffffff"
+            >
+              <path d="M100.28 448H7.4V149.41h92.88zm-46.44-340a53.41 53.41 0 1 1 53.4-53.4 53.4 53.4 0 0 1-53.4 53.4zM447.9 448h-92.68V302.4c0-34.7-.7-79.3-48.3-79.3-48.3 0-55.7 37.7-55.7 76.6V448h-92.68V149.41H251v40.8h1.3c13.9-26.4 47.8-54.3 98.3-54.3 105 0 124.4 69.1 124.4 158.8V448z"/>
             </svg>
           </a>
+
+
+
+
         </li>
 
 
