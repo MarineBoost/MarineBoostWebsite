@@ -3,10 +3,10 @@
                     url(../../utils/images/terms_condition_freefix.jpeg);
   background-size: cover;
   background-position: center;
-  background-repeat: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  min-height: 400px; /* Ensures visibility on smaller screens */
-  height: 100vh; /* Full viewport height */
+  min-height: 400px;
+  height: 100vh;
   color: white;
   display: flex;
   align-items: center;
@@ -18,17 +18,16 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .image_div {
-    height: auto; /* Adjust height for small screens */
+    height: auto;
     min-height: 300px;
     padding: 40px 20px;
   }
 }
 
 .center-container {
-
   background-size: cover;
   background-position: center;
-  background-repeat: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +41,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .center-container {
-    height: auto; 
+    height: auto;
     min-height: 300px;
     padding: 40px 20px;
   }

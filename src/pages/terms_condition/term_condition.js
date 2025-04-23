@@ -53,7 +53,7 @@ const Term_condition = () => {
     <p>Marine Boost reserves the right to update, amend, or change these terms and conditions at any time without prior notice. By continuing to use the website, you agree to abide by the most recent version of these terms.</p>
 
     <h6 className="mt-4 text-black">7. Contact Us</h6>
-    <p>If you have any questions or concerns regarding these terms and conditions, please feel free to <a href="/contact">contact us</a>.</p>
+    <p>If you have any questions or concerns regarding these terms and conditions, please feel free to <a href="/contact">Contact us</a>.</p>
   </div>
 </div>
 
