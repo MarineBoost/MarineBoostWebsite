@@ -12,10 +12,8 @@
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
     .home-page .header {
         height: 70vh;
@@ -45,7 +43,8 @@
     max-height: 500px; 
 }
 
-/* Additional media queries for responsive image scaling */
+
+
 @media (max-width: 1024px) {
     .home-page img {
         max-height: 450px;
