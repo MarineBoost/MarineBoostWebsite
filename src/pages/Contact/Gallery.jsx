@@ -62,7 +62,7 @@ const GallerySection = () => {
           autoPlay
           autoPlaySpeed={2000}
           arrows
-          showDots
+        //   showDots
         >
           {images.map((img, index) => (
             <div

@@ -88,8 +88,8 @@
 
 @media (min-width: 576px) and (max-width: 992px) {
     .carousel-image-wrapper {
-        flex: 1 1 calc(50% - 16px); /* Show 2 images per row on tablets */
-        max-width: calc(50% - 16px);
+        flex: 1 1 calc(100% - 16px); /* Show 2 images per row on tablets */
+        max-width: calc(100% - 16px);
     }
 }
 

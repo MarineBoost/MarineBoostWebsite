@@ -254,7 +254,7 @@ function App() {
                 </p>
                 <p><strong>Phone Number  &nbsp; :</strong>  &nbsp;+91 81091 26423</p>
                 <p><strong>Email  &nbsp;:</strong> &nbsp; info@marineboost.com</p>
-                <p><strong>Website  &nbsp; :  &nbsp;</strong> <a href="https://www.marineboost.com" target="_blank" rel="noopener noreferrer">www.marineboost.com</a></p>
+                {/* <p><strong>Website  &nbsp; :  &nbsp;</strong> <a href="https://www.marineboost.com" target="_blank" rel="noopener noreferrer">www.marineboost.com</a></p> */}
               </li>
             </ul>
           </div>
