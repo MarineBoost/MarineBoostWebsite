@@ -95,7 +95,7 @@
 
 @media (min-width: 992px) {
     .carousel-image-wrapper {
-        flex: 1 1 calc(33.33% - 16px); /* Show 3 images per row on desktops */
+        flex: 1 1 calc(33.33% - 16px); 
         max-width: calc(33.33% - 16px);
     }
 }
@@ -103,7 +103,7 @@
 /* Hide default carousel arrows */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    display: none !important; /* Ensure the default icons are completely hidden */
+    display: none !important; 
 }
 
 .carousel-control-prev,
@@ -114,7 +114,7 @@
     justify-content: center;
 }
 
-/* Custom left arrow */
+
 .carousel-control-prev::after {
     content: '‹'; /* left arrow */
     font-size: 4rem;

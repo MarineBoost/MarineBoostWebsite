@@ -236,6 +236,7 @@ function App() {
               {/* <Link to="/blog" className='text-decoration-none text-danger'>
                 <li className='text-uppercase fw-semibold mt-2'>Blog</li>
               </Link> */}
+              
               <Link to="/term_condition" className='text-decoration-none text-danger'>
                 <li className='text-uppercase fw-semibold mt-2'>Terms & Condition</li>
               </Link>
@@ -265,7 +266,7 @@ function App() {
   </div>
   <div >
     <div className='container'>
-      <p className='p-3 m-0 text-center'>copyright 2025 @ <b style={{ color: "blue" }}> Marine Boost</b></p>
+      <p className='p-3 m-0 text-center'>Copyright 2025 @ <b style={{ color: "blue" }}> Marine Boost</b> ! All rights reserved.</p>
     </div>
   </div>
 

@@ -10,7 +10,7 @@ const BackgroundSlideshow = ({ images, children }) => {
     }, 4000);
     return () => clearInterval(interval);
   }, [index]);
-
+ 
   const handleNext = () => {
     setIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
