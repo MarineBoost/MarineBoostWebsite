@@ -68,19 +68,13 @@ nav .navbar-toggler:focus {
   }
 }
 
-
-
-
 .navbar .nav-link.active, 
 .navbar .nav-link:focus {
   color:  #dc3545 !important; 
   font-weight: bold;
-  border-bottom:   #dc3545; /* Optional underline effect */
+  border-bottom:   #dc3545; 
 }
 
-
-
-/* Image Hover Effect */
 .client-image {
  
   border-radius: 10px; 
@@ -103,7 +97,7 @@ nav .navbar-toggler:focus {
 
 /* App.css */
 body {
-  padding-top: 60px; /* Adjust according to navbar height */
+  padding-top: 60px; 
 
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;

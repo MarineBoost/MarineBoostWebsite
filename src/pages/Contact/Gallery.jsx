@@ -1,20 +1,15 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import KankariyaImg from '../../utils/images/galley_section/01-04-2025.jpg';
-import Jal_mandir from '../../utils/images/galley_section/02-04-2025.jpg';
-import Nalanda_university from '../../utils/images/marine_1.jpg';
-import pic1 from '../../utils/images/London-location.jpg';
-import pic2 from '../../utils/images/Manchester-location.jpg';
-import pic3 from '../../utils/images/food_safety_and_standard_authority_of_india_clean_street_food_hub_ahmedabad_kankaria_lake_1536401601.jpg';
+
 const GallerySection = () => {
     function importAll(r) {
         return r.keys().map((key) => {
           const fileName = key.replace('./', '').replace(/\.(jpg|png)$/, '');
       
-          // Convert file name like '01-04-2025' or 'jal_mandir' to readable title
+      
           const formattedTitle = fileName
-            .replace(/[_-]/g, ' ') // Replace _ or - with space
-            .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize each word
+            .replace(/[_-]/g, ' ') 
+            .replace(/\b\w/g, (char) => char.toUpperCase()); 
       
           return {
             src: r(key),
@@ -25,16 +20,7 @@ const GallerySection = () => {
       
       const images = importAll(require.context('../../utils/images/galley_section', false, /\.(jpg|png)$/));
 
-      
-    //   const images = [
-    //     { src: KankariyaImg, title: 'Kankariya Lake' },
-    //     { src: Jal_mandir, title: 'Jal Mandir' },
-    //     { src: Nalanda_university, title: 'Nalanda University' },
-    //     { src: pic1, title: 'Nalanda University' },
-    //     { src: pic2, title: 'Nalanda University' },
-    //     { src: pic3, title: 'Nalanda University' },
-    //   ];
-    
+   
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },

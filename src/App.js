@@ -30,7 +30,7 @@ function App() {
 
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Redirects to the top of the page on load
+    window.scrollTo(0, 0);
   }, []);
   
   const location = useLocation(); 
@@ -127,6 +127,7 @@ function App() {
         <Route path='/e-commerce' element={<EcommerceServices />} />  
         
         <Route path='/ppc' element={<Ppc />} />  
+        
         <Route path='/seo' element={<Seo />} />
       </Routes>
 
@@ -206,10 +207,6 @@ function App() {
               <path d="M100.28 448H7.4V149.41h92.88zm-46.44-340a53.41 53.41 0 1 1 53.4-53.4 53.4 53.4 0 0 1-53.4 53.4zM447.9 448h-92.68V302.4c0-34.7-.7-79.3-48.3-79.3-48.3 0-55.7 37.7-55.7 76.6V448h-92.68V149.41H251v40.8h1.3c13.9-26.4 47.8-54.3 98.3-54.3 105 0 124.4 69.1 124.4 158.8V448z"/>
             </svg>
           </a>
-
-
-
-
         </li>
 
 
