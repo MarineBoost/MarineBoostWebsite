@@ -134,6 +134,7 @@ function App() {
       <button onClick={topFunction} id="myBtn" title="Go to top">
         <FontAwesomeIcon icon={faArrowUp} className="icon-large" />
       </button>
+      
       <footer style={{backgroundColor:"#d3d3d3"}}>
 
   <div className='container p-3' >
@@ -268,6 +269,7 @@ function App() {
   </div>
 
 </footer>
+
     </div>
   );
 }

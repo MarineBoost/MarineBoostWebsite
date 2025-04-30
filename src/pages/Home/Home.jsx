@@ -67,6 +67,32 @@ function Home() {
     <div className="home-page">
   <BackgroundSlideshow images={homePageImages} className="header h-100 min-vh-100 d-flex align-items-center text-light position-relative">
 
+  {/* Text content */}
+  {/* <div
+    className="container d-flex flex-column align-items-center text-center px-3 px-md-5"
+    style={{ position: "relative", zIndex: 2 }}
+  >
+    <h2>Welcome To</h2>
+    <h1 className="fw-semibold">Marine Boost</h1>
+    <p>
+      At Marine Boost, we go beyond traditional digital marketing—we craft tailored strategies that drive real growth.
+      Specializing in e-commerce, we leverage data-driven insights, innovative campaigns, and performance-focused solutions
+      to help brands thrive in the digital space.
+    </p>
+    <div className="d-flex flex-column flex-sm-row align-items-center">
+      <Link to="/courses">
+        <button type="button" className="btn btn-danger btn-lg mx-0 mx-sm-2 my-2 my-sm-0">
+          Our Services
+        </button>
+      </Link>
+      <Link to="/contact">
+        <button type="button" className="btn btn-dark btn-lg mx-0 mx-sm-2 my-2 my-sm-0">
+          Contact Us
+        </button>
+      </Link>
+    </div>
+  </div> */}
+
 </BackgroundSlideshow>
 
 
