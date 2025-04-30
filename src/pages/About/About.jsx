@@ -37,7 +37,8 @@ function About() {
   }, []);
   
   useEffect(() => {
-    window.scrollTo(0, 0); // Redirects to the top of the page on load
+    window.scrollTo(0, 0); 
+
   }, []);
   
 
@@ -51,8 +52,7 @@ function About() {
                 <p className='text-center w-75 mb-5'> Welcome to MARINE BOOST, a results-driven digital marketing agency with 6+ years of expertise in helping businesses grow online. We specialize in innovative strategies to enhance brand presence, generate leads, and boost revenue. Let’s achieve success together! </p>
             </div>
         </header>
-
-        <div className='container my-5'>
+          <div className='container my-5'>
             <div className="row">
                 <div className='col-lg-6 d-flex flex-column justify-content-center mb-4 mb-lg-0'>
                     <h2 className='mb-4 mb-lg-5'>Grow with Marine Boost

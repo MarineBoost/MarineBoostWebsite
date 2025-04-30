@@ -24,12 +24,18 @@ const socialImages  = [
   require("../../utils/images/9.jpg"),
   require("../../utils/images/10.jpg"),
 ];
+const importAll = (r) => r.keys().map(r);
 
-const homePageImages = [
-  require("../../utils/images/home-page-header1.jpeg"),
-  require("../../utils/images/home-page-header2.jpeg"),
-  require("../../utils/images/home-page-header3.jpeg"),
-];
+const homePageImages = importAll(
+  require.context("../../utils/images/digital_marketing", true, /\.(png|jpe?g|svg|webp|gif|avif|bmp)$/)
+);
+
+
+// const homePageImages = [
+//   require("../../utils/images/home-page-header1.jpeg"),
+//   require("../../utils/images/home-page-header2.jpeg"),
+//   require("../../utils/images/home-page-header3.jpeg"),
+// ];
 
 function Home() {
   
@@ -60,54 +66,17 @@ function Home() {
        {loading ? <Loader /> :
     <div className="home-page">
   <BackgroundSlideshow images={homePageImages} className="header h-100 min-vh-100 d-flex align-items-center text-light position-relative">
-  {/* Dark overlay */}
-  <div
-    style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      height: "100%",
-      width: "100%",
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
-      zIndex: 1,
-    }}
-  />
 
-  {/* Text content */}
-  <div
-    className="container d-flex flex-column align-items-center text-center px-3 px-md-5"
-    style={{ position: "relative", zIndex: 2 }}
-  >
-    <h2>Welcome To</h2>
-    <h1 className="fw-semibold">Marine Boost</h1>
-    <p>
-      At Marine Boost, we go beyond traditional digital marketing—we craft tailored strategies that drive real growth.
-      Specializing in e-commerce, we leverage data-driven insights, innovative campaigns, and performance-focused solutions
-      to help brands thrive in the digital space.
-    </p>
-    <div className="d-flex flex-column flex-sm-row align-items-center">
-      <Link to="/courses">
-        <button type="button" className="btn btn-danger btn-lg mx-0 mx-sm-2 my-2 my-sm-0">
-          Our Services
-        </button>
-      </Link>
-      <Link to="/contact">
-        <button type="button" className="btn btn-dark btn-lg mx-0 mx-sm-2 my-2 my-sm-0">
-          Contact Us
-        </button>
-      </Link>
-    </div>
-  </div>
 </BackgroundSlideshow>
 
 
       
 
-<center style={{marginTop:"3%"}}><h2 >Working Platforms</h2> </center>
+<center  style={{marginTop:"3%"}}><h2 >Working Platforms</h2> </center>
 
      <SocialImageSlider images={socialImages}  />
 
-      <div className="py-5">
+      <div className="py-1">
         <ChooseSection />
       </div>
 

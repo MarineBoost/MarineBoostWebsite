@@ -48,7 +48,7 @@ const SocialImageSlider = ({ images }) => {
         height: sliderHeight, // Adjust height based on screen size
         transition: "background-image 0.8s ease-in-out",
         position: "relative",
-        marginTop: "5%",
+        marginTop: "1%",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

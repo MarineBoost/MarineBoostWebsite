@@ -43,8 +43,7 @@ const services = [
 ];
 
 const Donate = () => {
-
-
+  
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState(null);
   
