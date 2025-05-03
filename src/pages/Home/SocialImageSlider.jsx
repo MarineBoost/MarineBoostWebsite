@@ -45,7 +45,7 @@ const SocialImageSlider = ({ images }) => {
         backgroundImage: `url(${images[index]})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: sliderHeight, // Adjust height based on screen size
+        height: sliderHeight, 
         transition: "background-image 0.8s ease-in-out",
         position: "relative",
         marginTop: "1%",
@@ -86,7 +86,6 @@ const SocialImageSlider = ({ images }) => {
           marginTop:"80%"
         }}
       >
-       
         {images.map((_, i) => (
           <span
             key={i}
@@ -104,8 +103,7 @@ const SocialImageSlider = ({ images }) => {
           ></span>
         ))}
       </div>
-
-      {/* Right Arrow */}
+      
       <button
         className="arrow right-arrow"
         onClick={handleNext}
@@ -116,9 +114,9 @@ const SocialImageSlider = ({ images }) => {
           background: "black",
           color: "white",
           padding: "5px",
-
           cursor: "pointer",
         }}
+
       >
         <FaArrowRight />
       </button>

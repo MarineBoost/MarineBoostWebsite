@@ -2,22 +2,26 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  background-color: brown;
 }
 
 .background-image {
   position: absolute;
+  opacity: 0.5;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fit;
   z-index: -1;
 }
 
 .overlay-content {
   position: relative;
+  opacity: 1;
+
   z-index: 1;
   width: 100%;
   padding: 1rem;
@@ -43,7 +47,6 @@
   }
 }
 
-/* Larger height for desktop screens */
 @media (min-width: 1024px) {
   .background-slideshow,
   .slideshow-img {

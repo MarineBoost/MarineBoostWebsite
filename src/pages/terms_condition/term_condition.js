@@ -12,8 +12,6 @@ const Term_condition = () => {
       window.scrollTo(0, 0); 
     }, []);
     
-
-  
     useEffect(() => {
     
       setTimeout(() => {
@@ -59,9 +57,12 @@ const Term_condition = () => {
 
     </div>
 }
+
+
      </>
     
   );
 };
 
 export default Term_condition;
+
