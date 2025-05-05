@@ -87,7 +87,7 @@
     }
   }
   
-  /* Tablets and landscape phones */
+
   @media (max-width: 768px) {
     .home-page img {
       max-height: 400px;
@@ -250,7 +250,7 @@
   
   @media (max-width: 480px) {
     .social-slider {
-      height: 30vh; /* Even smaller height for very small screens */
+      height: 30vh; 
     }
   }
   

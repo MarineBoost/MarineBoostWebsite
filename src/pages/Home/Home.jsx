@@ -50,10 +50,6 @@ function Home() {
     }, 1000); 
   }, []);
 
-
-  
-
-
   return (
     <> 
        {loading ? <Loader /> :
