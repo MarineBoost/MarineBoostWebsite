@@ -60,8 +60,8 @@ function Home() {
 >
 
 <div className="overlay-text position-absolute text-center px-3 px-md-4">
-  <h6 className="text-uppercase text-light mb-2 fs-6 fs-md-5">Welcome To</h6>
-  <h1 className="fw-bold text-light display-5 display-md-3">Marine Boost</h1>
+  <h6 className="text-uppercase text-light mb-2 fs-6 fs-md-5">Welcome  To</h6>
+  <h4 className="fw-bold text-light display-5 display-md-3">Marine Boost</h4>
   <p className="text-light mt-3 fs-6 fs-md-5">
   Boost your brand with smart, data-driven digital strategies.
   At Marine Boost, we power e-commerce growth through creativity and performance.

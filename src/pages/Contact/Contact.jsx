@@ -4,9 +4,6 @@ import './Contact.css';
 import KankariyaImg from '../../utils/images/marine_3.jpg';
 import Jal_mandir from '../../utils/images/marine_2.jpg';
 import Nalanda_university from '../../utils/images/marine_1.jpg';
-import pic1 from '../../utils/images/London-location.jpg';
-import pic2 from '../../utils/images/Manchester-location.jpg';
-import pic3 from '../../utils/images/food_safety_and_standard_authority_of_india_clean_street_food_hub_ahmedabad_kankaria_lake_1536401601.jpg';
 import emailjs from '@emailjs/browser';
 import { Container, Row , Col, Form, Button } from "react-bootstrap";
 
@@ -67,9 +64,7 @@ function Contact() {
     { src: KankariyaImg, title: 'Kankariya Lake' },
     { src: Jal_mandir, title: 'Jal Mandir' },
     { src: Nalanda_university, title: 'Nalanda University' },
-    { src: pic1, title: 'Nalanda University' },
-    { src: pic2, title: 'Nalanda University' },
-    { src: pic3, title: 'Nalanda University' },
+
   ];
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import donate_pic from '../../utils/images/balloons-charity-colorful-colourful.jpg';
+
 import upi_qrcode from '../../utils/images/upi_amarjeet_qrcode.png';
 import './Donate.css';
 import { useState, useEffect } from "react";
