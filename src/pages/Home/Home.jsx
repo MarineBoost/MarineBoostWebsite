@@ -58,15 +58,7 @@ function Home() {
   images={homePageImages}
   className="header h-100 min-vh-100 d-flex align-items-center text-light position-relative"
 >
-{/* <div className="overlay-text position-absolute text-center px-4">
-  <h6>Welcome To <p>Marine Boost </p></h6>
-  <h6 className=""></h6>
-  <p className="lead mt-3">
-    At Marine Boost, we redefine digital marketing with personalized strategies that deliver measurable results.
-    Our focus on e-commerce means we harness data-driven insights, creative campaigns, and performance-led tactics
-    to help brands succeed and grow in today’s digital world.
-  </p>
-</div> */}
+
 <div className="overlay-text position-absolute text-center px-3 px-md-4">
   <h6 className="text-uppercase text-light mb-2 fs-6 fs-md-5">Welcome To</h6>
   <h1 className="fw-bold text-light display-5 display-md-3">Marine Boost</h1>
