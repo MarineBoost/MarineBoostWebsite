@@ -76,8 +76,8 @@ function App() {
           <Navbar.Brand>
             <Link to="/" className="navbar-brand d-flex" onClick={() => setExpanded(false)}>
               <img src={logoImage} alt="logo" style={{ width: "85%", height: "4.8vh", objectFit: "contain" }} />
-              <span className="mx-0 text-dark fw-semibold">
-                <b style={{ fontSize: "24px" }}>Marine Boost</b>
+              <span className="mx-1 mt-1 text-dark fw-semibold">
+                <b style={{ fontSize: "22px" }}>Marine Boost</b>
               </span>
             </Link>
           </Navbar.Brand>
