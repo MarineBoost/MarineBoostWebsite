@@ -1,6 +1,4 @@
 import React from 'react';
-
-import upi_qrcode from '../../utils/images/upi_amarjeet_qrcode.png';
 import './Donate.css';
 import { useState, useEffect } from "react";
 
@@ -64,6 +62,7 @@ const Donate = () => {
     <>
       {loading ? <Loader /> :
       <div className="term-page-fluid">
+
 
       <div className='image_div1' style={{ position: 'relative', textAlign: 'center', color: 'white' }}>
               <h1 className="overlay-text" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',  padding: '10px', borderRadius: '5px' }}>OUR BUSINESS</h1>

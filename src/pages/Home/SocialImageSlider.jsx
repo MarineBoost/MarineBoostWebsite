@@ -48,7 +48,6 @@ const SocialImageSlider = ({ images }) => {
         height: sliderHeight, 
         transition: "background-image 0.8s ease-in-out",
         position: "relative",
-        marginTop: "1%",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

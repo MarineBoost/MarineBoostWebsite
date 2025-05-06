@@ -58,6 +58,7 @@ function FaqAccordion() {
                 <Accordion.Item eventKey='7'>
                     <Accordion.Header>How do I get started?</Accordion.Header>
                     <Accordion.Body>
+                        
                     Simply contact us for a free consultation! We’ll discuss your business needs and create a strategy to boost your digital success.
                     </Accordion.Body>
                 </Accordion.Item>
