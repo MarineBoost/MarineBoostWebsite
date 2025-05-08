@@ -244,15 +244,17 @@ function App() {
             </ul>
           </div>
 
-          <div className='col-12 col-md-6 col-lg-7'>
+          <div className='col-12 col-md-6 col-lg-9'>
             <ul className='list-unstyled mb-0'>
               <li>
                 <p><strong>Address  &nbsp; :</strong>   &nbsp;B-34, Marutidham Sosa ,
                <p>  Rajendra Park Canal Road, Rajendra Park, Odhav,Ahmedabad, Gujarat  <br></br>  <strong>Pincode  &nbsp; :</strong>  &nbsp; 382415</p> 
               
                 </p>
-                <p><strong>Phone Number  &nbsp; :</strong>  &nbsp;+91 81091 26423</p>
                 <p><strong>Email  &nbsp;:</strong> &nbsp; info@marineboost.com</p>
+                <p><strong>Phone Number  &nbsp; :</strong>  &nbsp;+91 9574067518  / 81091 26423 </p>
+           
+              
                 {/* <p><strong>Website  &nbsp; :  &nbsp;</strong> <a href="https://www.marineboost.com" target="_blank" rel="noopener noreferrer">www.marineboost.com</a></p> */}
               </li>
             </ul>

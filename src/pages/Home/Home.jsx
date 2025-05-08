@@ -11,7 +11,6 @@ import { useState, useEffect } from "react";
 
 import Loader from "../../pages/Loader/Loader";
 
-
 const socialImages  = [
   require("../../utils/images/1-1.jpg"),
   require("../../utils/images/2.jpg"),
@@ -52,7 +51,7 @@ function Home() {
 
   return (
     <> 
-       {loading ? <Loader /> :
+    {loading ? <Loader /> :
     <div className="home-page">
 <BackgroundSlideshow
   images={homePageImages}
@@ -60,6 +59,7 @@ function Home() {
 >
 
 <div className="overlay-text position-absolute text-center px-3 px-md-4">
+
   <h4 className="text-light mb-2 fs-6 fs-md-5">Welcome  To</h4>
   <h4 className="fw-bold text-light display-5 display-md-2">Marine Boost</h4>
   <p className="text-light mt-1 fs-6 fs-md-5">
