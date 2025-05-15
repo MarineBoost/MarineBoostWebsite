@@ -23,6 +23,7 @@ const socialImages  = [
   require("../../utils/images/9.jpg"),
   require("../../utils/images/10.jpg"),
 ];
+
 const importAll = (r) => r.keys().map(r);
 
 const homePageImages = importAll(
@@ -53,23 +54,23 @@ function Home() {
     <> 
     {loading ? <Loader /> :
     <div className="home-page">
-<BackgroundSlideshow
-  images={homePageImages}
-  className="header h-100 min-vh-100 d-flex align-items-center text-light position-relative"
->
+      <BackgroundSlideshow
+        images={homePageImages}
+        className="header h-100 min-vh-100 d-flex align-items-center text-light position-relative"
+      >
 
-<div className="overlay-text position-absolute text-center px-3 px-md-4">
+      <div className="overlay-text position-absolute text-center px-3 px-md-4">
 
-  <h4 className="text-light mb-2 fs-6 fs-md-5">Welcome  To</h4>
-  <h4 className="fw-bold text-light display-5 display-md-2">Marine Boost</h4>
-  <p className="text-light mt-1 fs-6 fs-md-5">
-  Boost your brand with smart, data-driven digital strategies.
-  At Marine Boost, we power e-commerce growth through creativity and performance.
-  </p>
-</div>
+        <h4 className="text-light mb-2 fs-6 fs-md-5">Welcome  To</h4>
+        <h4 className="fw-bold text-light display-5 display-md-2">Marine Boost</h4>
+        <p className="text-light mt-1 fs-6 fs-md-5">
+        Boost your brand with smart, data-driven digital strategies.
+        At Marine Boost, we power e-commerce growth through creativity and performance.
+        </p>
+      </div>
 
 
-</BackgroundSlideshow>
+      </BackgroundSlideshow>
 
 
 <center  style={{marginTop:"3%"}}><h2 >Working Platforms</h2> </center>
@@ -84,8 +85,7 @@ function Home() {
         <div className="container">
           <div className="row d-flex align-items-center justify-content-around">
             <div className="col-lg-5">
-              <h2 className="text-capitalize">
-                Marine Boost 2025: Elevate Your Digital Growth</h2>
+              <h2 className="text-capitalize"> Marine Boost 2025: Elevate Your Digital Growth</h2>
               <p>
                 Stay ahead in 2025 with Marine Boost, your trusted partner in data-driven digital marketing. From SEO and social media
                 to PPC and content marketing, we craft tailored strategies that drive real results.
@@ -112,3 +112,6 @@ function Home() {
 }
 
 export default Home;
+
+
+

@@ -12,6 +12,7 @@ const BackgroundSlideshow = ({ images, children }) => {
   }, [index]);
 
   return (
+    
     <div className="container1" >   
   <div className="background-slideshow">
       <img src={images[index]} alt="" className="slideshow-img"  />

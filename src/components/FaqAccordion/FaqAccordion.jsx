@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './FaqAccordion.css';
 import Accordion from 'react-bootstrap/Accordion';
@@ -48,7 +47,7 @@ function FaqAccordion() {
                     </Accordion.Body>
                 </Accordion.Item>
 
-                <Accordion.Item eventKey='6'>
+                <Accordion.Item eventKey='6'>   
                     <Accordion.Header>What makes Marine Boost different from other agencies?</Accordion.Header>
                     <Accordion.Body>
                     Our expertise in e-commerce growth, data-driven approach, personalized strategies, and dedicated support set us apart. We focus on real results that help businesses scale.

@@ -1,7 +1,7 @@
 import React from 'react';
+
 import './About.css';
 import { Link } from 'react-router-dom';
-// import AboutUsSectionImg from '../../utils/images/marineboost_white.jpeg';
 import AboutUsVideo from '../../utils/images/logo_animation/logo_animation_marine_boost.mp4';
 
 import ChooseSection from '../../components/ChooseSection/ChooseSection';

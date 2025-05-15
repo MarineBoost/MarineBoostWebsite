@@ -260,9 +260,9 @@ function Contact() {
         </div>
       )}
 
-  
+      \
 
-
+       
     <div className="bg-light text-dark py-1">
  
         <h2 className="text-center"  style={{ color: '#e91e63', fontWeight: 'bold' }}>Gallery</h2>
