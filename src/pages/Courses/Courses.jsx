@@ -117,7 +117,7 @@ function Courses() {
             </div>
         </div>
 
-        <div className='bg-light text-light py-5'>
+        <div className='bg-light text-light py-2'>
             <FaqAccordion />
         </div>
     </div>
