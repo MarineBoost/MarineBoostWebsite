@@ -91,7 +91,7 @@ const Ppc = () => {
     }}
   >
     <h2 className="fw-bold display-5">Pay-Per-Click (PPC) Advertising</h2>
-    <p>
+       <p>
           In today’s digital landscape, organic growth takes time. With Pay-Per-Click (PPC) advertising, you can
           instantly attract highly targeted traffic and boost conversions. At Marine Boost, we craft data-driven
           PPC campaigns that maximize your ROI.

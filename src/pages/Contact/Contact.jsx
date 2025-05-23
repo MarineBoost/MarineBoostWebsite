@@ -210,30 +210,30 @@ function Contact() {
           </Form.Group>
 
           <Row className="mb-3">
-  <Col sm={12} md={6} className="mb-3 mb-md-0">
-    <Form.Label>Location</Form.Label>
-    
-    {/* Searchable Dropdown */}
-    <Select
-      options={allCities.map((city) => ({ label: city.name, value: city.name }))}
-      value={location ? { label: location, value: location } : null}
-      onChange={(selectedOption) => setLocation(selectedOption.value)}
-      placeholder="-- Select a City --"
-      isSearchable
-    />
-  </Col>
+                <Col sm={12} md={6} className="mb-3 mb-md-0">
+                  <Form.Label>Location</Form.Label>
+                  
+                  {/* Searchable Dropdown */}
+                  <Select
+                    options={allCities.map((city) => ({ label: city.name, value: city.name }))}
+                    value={location ? { label: location, value: location } : null}
+                    onChange={(selectedOption) => setLocation(selectedOption.value)}
+                    placeholder="-- Select a City --"
+                    isSearchable
+                  />
+                </Col>
 
-  <Col sm={12} md={6}>
-    <Form.Label>Postcode</Form.Label>
-    <Form.Control
-      type="text"
-      placeholder="Postcode"
-      value={postcode}
-      onChange={(e) => setPostcode(e.target.value)}
-      required
-    />
-  </Col>
-</Row>
+                <Col sm={12} md={6}>
+                  <Form.Label>Postcode</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Postcode"
+                    value={postcode}
+                    onChange={(e) => setPostcode(e.target.value)}
+                    required
+                  />
+                </Col>
+          </Row>
 
 
           <Form.Group className="mb-3">

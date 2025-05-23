@@ -225,8 +225,6 @@
 
   
 /*social slider */
-
-
 .social-slider {
     height: 80vh;
     width: 100%;
@@ -242,7 +240,7 @@
   
   @media (max-width: 768px) {
     .social-slider {
-      height: 40vh; /* Smaller height on smaller screens */
+      height: 40vh; 
     }
   }
   

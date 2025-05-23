@@ -16,9 +16,7 @@ const AdsComponent = (props) => {
         }
 
     },[]);
-
-
-
+    
     return (
         <>
             <ins className="adsbygoogle"

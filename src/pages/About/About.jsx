@@ -17,7 +17,7 @@ import Loader from "../../pages/Loader/Loader";
 
 const persons = [
   { id: 1, img: Person1, name: "Pooja Sharma", role: "Founder" },
-  { id: 2, img: Person2, name: "Krishna Sharma", role: "Co-Founder\nE-Commerce Specialist" },
+  // { id: 2, img: Person2, name: "Krishna Sharma", role: "Co-Founder\nE-Commerce Specialist" },
   { id: 3, img: Person3, name: "Amarjeet Kumar", role: "Sr. Developer" },
   { id: 4, img: Person4, name: "Sonu Sankhla", role: "Marketing Head" },
   { id: 5, img: Person5, name: "Jay Prajapati", role: "Website Coordinator" },
@@ -82,7 +82,7 @@ function About() {
             <h2 className='text-center mb-5'>Our Team Members</h2>
             <div className='row g-4'>
             {persons.map((person) => (
-            <div key={person.id} className='col-6 col-md-4 col-lg-2 d-flex justify-content-center'>
+            <div key={person.id} className='col-6 col-md-4 col-lg-3 d-flex justify-content-center'>
               <div className="team-card">
                 <img 
                   src={person.img} 
