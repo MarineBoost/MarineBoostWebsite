@@ -19,7 +19,7 @@ const persons = [
   { id: 1, img: Person1, name: "Pooja Sharma", role: "Founder" },
   // { id: 2, img: Person2, name: "Krishna Sharma", role: "Co-Founder\nE-Commerce Specialist" },
   { id: 3, img: Person3, name: "Amarjeet Kumar", role: "Sr. Developer" },
-  { id: 4, img: Person4, name: "Sonu Sankhla", role: "Marketing Head" },
+  { id: 4, img: Person4, name: "Sonu Sankhla", role: "E-Commerce Specialist" },
   { id: 5, img: Person5, name: "Jay Prajapati", role: "Website Coordinator" },
 ];
 
